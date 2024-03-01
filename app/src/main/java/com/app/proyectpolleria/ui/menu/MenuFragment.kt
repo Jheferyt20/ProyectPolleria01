@@ -1,4 +1,4 @@
-package com.app.proyectpolleria.ui.dashboard
+package com.app.proyectpolleria.ui.menu
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.app.proyectpolleria.databinding.FragmentFavoritoBinding
+import com.app.proyectpolleria.databinding.FragmentMenuBinding
 
-class FavoritoFragment : Fragment() {
+class MenuFragment : Fragment() {
 
-    private var _binding: FragmentFavoritoBinding? = null
+    private var _binding: FragmentMenuBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class FavoritoFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val favoritoViewModel =
-            ViewModelProvider(this).get(FavoritoViewModel::class.java)
+        val menuViewModel =
+            ViewModelProvider(this).get(MenuViewModel::class.java)
 
-        _binding = FragmentFavoritoBinding.inflate(inflater, container, false)
+        _binding = FragmentMenuBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        favoritoViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textMenu
+        menuViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

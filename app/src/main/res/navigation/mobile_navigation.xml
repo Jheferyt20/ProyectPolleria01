@@ -3,29 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_inicio">
 
     <fragment
         android:id="@+id/navigation_inicio"
-        android:name="com.app.proyectpolleria.ui.home.InicioFragment"
+        android:name="com.app.proyectpolleria.ui.inicio.InicioFragment"
         android:label="@string/title_inicio"
         tools:layout="@layout/fragment_inicio" />
 
     <fragment
         android:id="@+id/navigation_favorito"
-        android:name="com.app.proyectpolleria.ui.dashboard.FavoritoFragment"
+        android:name="com.app.proyectpolleria.ui.favorito.FavoritoFragment"
         android:label="@string/title_favorito"
         tools:layout="@layout/fragment_favorito" />
 
     <fragment
         android:id="@+id/navigation_menu"
-        android:name="com.app.proyectpolleria.ui.notifications.MenuFragment"
+        android:name="com.app.proyectpolleria.ui.menu.MenuFragment"
         android:label="@string/title_menu"
         tools:layout="@layout/fragment_menu" />
 
     <fragment
         android:id="@+id/navigation_micuenta"
-        android:name="com.app.proyectpolleria.ui.notifications.MenuFragment"
+        android:name="com.app.proyectpolleria.ui.menu.MenuFragment"
         android:label="@string/title_micuenta"
         tools:layout="@layout/fragment_menu" />
 </navigation>

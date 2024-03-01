@@ -1,4 +1,4 @@
-package com.app.proyectpolleria.ui.home
+package com.app.proyectpolleria.ui.inicio
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -28,7 +28,7 @@ class InicioFragment : Fragment() {
         _binding = FragmentInicioBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
+        val textView: TextView = binding.textInicio
         inicioViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
