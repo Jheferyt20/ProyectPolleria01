@@ -6,20 +6,26 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.app.proyectpolleria.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_inicio"
+        android:name="com.app.proyectpolleria.ui.home.InicioFragment"
+        android:label="@string/title_inicio"
+        tools:layout="@layout/fragment_inicio" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.app.proyectpolleria.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_favorito"
+        android:name="com.app.proyectpolleria.ui.dashboard.FavoritoFragment"
+        android:label="@string/title_favorito"
+        tools:layout="@layout/fragment_favorito" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.app.proyectpolleria.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_menu"
+        android:name="com.app.proyectpolleria.ui.notifications.MenuFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/navigation_micuenta"
+        android:name="com.app.proyectpolleria.ui.notifications.MenuFragment"
+        android:label="@string/title_micuenta"
+        tools:layout="@layout/fragment_menu" />
 </navigation>
