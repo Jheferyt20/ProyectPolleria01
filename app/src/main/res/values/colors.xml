@@ -3,4 +3,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="app">#E12F2F</color>
+    <color name="red">#E85454</color>
+    <color name="purple">#673AB7</color>
+    <color name="sky">#00BCD4</color>
+    <color name="green">#4CAF50</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="gris">#ECE8E8</color>
+
+
 </resources>
