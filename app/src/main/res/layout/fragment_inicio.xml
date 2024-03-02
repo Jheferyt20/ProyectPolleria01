@@ -88,14 +88,23 @@
 
 
     <Button
-        android:layout_width="330dp"
+        android:layout_width="300dp"
         android:layout_height="50dp"
-        android:background="@drawable/curve_design"
+        android:background="@drawable/btn_trans"
+        android:drawableEnd="@drawable/custom_busq"
+        android:paddingStart="1dp"
+        android:paddingEnd="19dp"
+        android:text="¿QUE SE TE ANTOJA HOY?"
+        android:textSize="18dp"
+        android:textColor="#9E9797"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.101" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
