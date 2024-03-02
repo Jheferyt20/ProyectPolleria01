@@ -27,11 +27,13 @@ class InicioFragment : Fragment() {
 
         _binding = FragmentInicioBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
+/*
         val textView: TextView = binding.textInicio
         inicioViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+ */
         return root
     }
 
