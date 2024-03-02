@@ -1,5 +1,6 @@
 package com.app.proyectpolleria.ui.favorito
 
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -28,10 +29,8 @@ class FavoritoFragment : Fragment() {
         _binding = FragmentFavoritoBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textFavorito
-        favoritoViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+
+
         return root
     }
 
