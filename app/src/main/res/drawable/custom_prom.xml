@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:drawable="@drawable/busqueda"
-        android:width="32dp"
-        android:height="38dp"
+        android:drawable="@drawable/promocionespollo"
+        android:width="120dp"
+        android:height="95dp"
         />
 </layer-list>
