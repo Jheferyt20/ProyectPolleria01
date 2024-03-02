@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custom_button_background</item>
+        <!-- Puedes agregar más atributos según tus necesidades -->
+    </style>
+
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="itemIconTint">@color/black</item>
+        <item name="itemTextColor">@color/black</item>
+        <!-- Puedes ajustar otros atributos según tus necesidades -->
+    </style>
+
+</resources>
