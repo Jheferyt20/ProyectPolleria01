@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/navigation_micuenta"
-        android:name="com.app.proyectpolleria.ui.menu.MenuFragment"
+        android:name="com.app.proyectpolleria.ui.micuenta.MicuentaFragment"
         android:label="@string/title_micuenta"
         tools:layout="@layout/fragment_menu" />
 </navigation>
