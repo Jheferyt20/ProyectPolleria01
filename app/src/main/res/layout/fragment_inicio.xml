@@ -116,13 +116,25 @@
         android:background="@drawable/btn_design"
         android:drawableEnd="@drawable/custom_prom"
         android:paddingStart="15dp"
-        android:paddingEnd="29dp"
+        android:paddingEnd="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.247" />
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/custom_carrito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

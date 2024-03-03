@@ -27,11 +27,13 @@ class MicuentaFragment : Fragment() {
 
         _binding = FragmentMicuentaBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
+/*
         val textView: TextView = binding.textMicuenta
         micuentaViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+ */
         return root
     }
 
