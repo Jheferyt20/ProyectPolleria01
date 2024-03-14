@@ -6,4 +6,92 @@
     android:layout_height="match_parent"
     tools:context=".Activity_login">
 
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logoi"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="391dp"
+        android:layout_height="68dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_design"
+        android:gravity="center"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_new_contra"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_trans_full"
+        android:gravity="center"
+        android:text="¿Aun no tienes una cuenta?\nRegistrate aquí"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <EditText
+        android:id="@+id/txt_new_correo"
+        android:layout_width="330dp"
+        android:layout_height="53dp"
+        android:background="@drawable/txt_design"
+        android:drawableLeft="@drawable/custom_correo"
+        android:drawablePadding="11dp"
+        android:paddingStart="18dp"
+        android:text="Correo"
+        android:textColorHint="@color/grismore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <EditText
+        android:id="@+id/txt_new_contra"
+        android:layout_width="330dp"
+        android:layout_height="53dp"
+        android:background="@drawable/txt_design"
+        android:drawableLeft="@drawable/custom_contra"
+        android:drawablePadding="10dp"
+        android:paddingStart="21dp"
+        android:text="Contraseña"
+        android:textColorHint="@color/grismore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_new_correo"
+        app:layout_constraintVertical_bias="0.112" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
