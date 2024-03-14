@@ -17,17 +17,20 @@
             android:exported="false" />
         <activity
             android:name=".Activity_login"
-            android:exported="false" /> <!-- Actividad principal ahora es .Home -->
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <!-- Actividad principal ahora es .Home -->
         <activity
             android:name=".Home"
-            android:exported="true"
-            android:label="@string/title_activity_home">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"
+            android:label="@string/title_activity_home"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> <!-- Otras actividades de tu aplicación -->
+         <!-- Otras actividades de tu aplicación -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />

@@ -40,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_new_contra"
+        app:layout_constraintTop_toBottomOf="@+id/txt_contra"
         app:layout_constraintVertical_bias="0.455" />
 
     <Button
@@ -61,14 +61,15 @@
         app:layout_constraintVertical_bias="0.169" />
 
     <EditText
-        android:id="@+id/txt_new_correo"
+        android:id="@+id/txt_correo"
         android:layout_width="330dp"
         android:layout_height="53dp"
         android:background="@drawable/txt_design"
         android:drawableLeft="@drawable/custom_correo"
         android:drawablePadding="11dp"
+        android:inputType="textEmailAddress"
         android:paddingStart="18dp"
-        android:text="Correo"
+        android:hint="Correo"
         android:textColorHint="@color/grismore"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,20 +79,21 @@
         app:layout_constraintVertical_bias="0.389" />
 
     <EditText
-        android:id="@+id/txt_new_contra"
+        android:id="@+id/txt_contra"
         android:layout_width="330dp"
         android:layout_height="53dp"
         android:background="@drawable/txt_design"
         android:drawableLeft="@drawable/custom_contra"
         android:drawablePadding="10dp"
+        android:inputType="textPassword"
         android:paddingStart="21dp"
-        android:text="Contraseña"
+        android:hint="Contraseña"
         android:textColorHint="@color/grismore"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_new_correo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_correo"
         app:layout_constraintVertical_bias="0.112" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
