@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "153263675477",
+    "project_id": "pollerialenador-2024",
+    "storage_bucket": "pollerialenador-2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153263675477:android:c137918452f459a72f5cdc",
+        "android_client_info": {
+          "package_name": "com.app.proyectpolleria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjYZ9OyHa-rTiuaa2MaHd0MezReED3HyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
