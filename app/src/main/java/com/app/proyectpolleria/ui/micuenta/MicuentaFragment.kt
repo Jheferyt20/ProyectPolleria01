@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -26,6 +27,7 @@ class MicuentaFragment : Fragment() {
     private lateinit var btnCerrarSesion: Button
     private lateinit var btnEditar: Button
     private lateinit var btnGuardar: Button
+    private lateinit var btnCancelar: Button
     private lateinit var vusuario: EditText
     private lateinit var vnombre: EditText
     private lateinit var vapellido: EditText
@@ -59,6 +61,7 @@ class MicuentaFragment : Fragment() {
         btnCerrarSesion=binding.btnCerrarSesion
         btnEditar=binding.btnEditar
         btnGuardar=binding.btnGuardar
+        btnCancelar=binding.btnCancelar
         vusuario=binding.editUsuario
         vnombre=binding.editNombre
         vapellido=binding.editApellido
@@ -93,6 +96,12 @@ class MicuentaFragment : Fragment() {
             apellido.text = preferences.getString("apellido", "")
             telefono.text = preferences.getString("telefono", "")
             direccion.text = preferences.getString("direccion", "")
+        }
+
+        btnCancelar.setOnClickListener {
+            cardview.setVisibility(
+                View.GONE
+            )
         }
 
         return root

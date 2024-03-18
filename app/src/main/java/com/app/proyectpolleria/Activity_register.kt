@@ -36,8 +36,9 @@ class Activity_register : AppCompatActivity() {
                     if (task.isSuccessful) {
                         // Éxito al registrar
                         startActivity(Intent(this, Activity_login::class.java))
-                    } else {
                         showAlert()
+                    } else {
+                        showAlertelse()
                     }
                 }
             }
@@ -45,10 +46,18 @@ class Activity_register : AppCompatActivity() {
         }
     }
 
-    private fun showAlert(){
+    private fun showAlertelse(){
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
         builder.setMessage("Se ah producido un error de autentificación de usuario")
+        builder.setPositiveButton("Aceptar",null)
+        val dialog: AlertDialog=builder.create()
+        dialog.show()
+    }
+    private fun showAlert(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Felicidades")
+        builder.setMessage("Te has registrado exitosamente!!")
         builder.setPositiveButton("Aceptar",null)
         val dialog: AlertDialog=builder.create()
         dialog.show()
