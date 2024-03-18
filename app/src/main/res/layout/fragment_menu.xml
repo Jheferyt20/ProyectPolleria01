@@ -1,70 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.menu.MenuFragment"
+    android:background="@color/gris">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Personales"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/borden_red"
+            android:textColor="@color/app"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Para 2"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/borden_red"
+            android:textColor="@color/app"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="para compartir"
+            android:background="@drawable/borden_red"
+            android:textColor="@color/app"/>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="60dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
                 app:cardElevation="4dp"
-                app:cardUseCompatPadding="true"
-                android:background="@drawable/btn_trans">
+                app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    >
-
-                    <ImageView
-                        android:id="@+id/img1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/cuarto_personal" />
+                    android:layout_height="110dp">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="18dp"
                         android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingStart="8dp">
+                        android:orientation="vertical">
+
 
                         <TextView
                             android:id="@+id/marinera"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Tres Leches" />
+                            android:text="Combo Personal" />
 
                         <TextView
                             android:id="@+id/marinera2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="S/5.45" />
+                            android:text="S/13.52" />
 
                         <TextView
                             android:id="@+id/marinera3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1/4 de pollo, papas regulare, ensalada, cremas y gaseosa" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cuarto_personal" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agregar "
+                        android:layout_gravity="center_horizontal|bottom"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="-15dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/tresleches" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="18dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">>
+
+
+                        <TextView
+                            android:id="@+id/Mariscos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tres Leches" />
+
+                        <TextView
+                            android:id="@+id/Mariscos1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="S/5.45" />
+
+                        <TextView
+                            android:id="@+id/Mariscos3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Bizcocho bañado con 3 tipos de leche distintas" />
@@ -77,347 +169,310 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
                 app:cardElevation="4dp"
-                app:cardUseCompatPadding="true"
-                android:background="@drawable/btn_trans">
+                app:cardUseCompatPadding="true">
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp">
+                    android:layout_height="110dp">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:id="@+id/img7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
                         android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/mediopollo" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingStart="8dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Medio Pollo" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="S/25.52" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="1/2 de pollo, papas regulares, ensalada y cremas" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true"
-                android:background="@drawable/btn_trans">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/polloentero" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingStart="8dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pollo entero" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="S/55.52" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="1 pollo, papas familiar, ensalada familiar y cremas" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true"
-                android:background="@drawable/btn_trans">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/combofamiliar" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingStart="8dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Combo Familiar" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="S/67.50" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="1 + 1/4 de pollo, papas familiar, ensalada familiar, cremas y gaseosa" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true"
-                android:background="@drawable/btn_trans">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/brocoli" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingStart="8dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Ensalada de Brocoli" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="S/15.00" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Ensalada fresca base de brocoli" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true"
-                android:background="@drawable/btn_trans">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
                         android:src="@drawable/tresleches" />
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="18dp"
                         android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingStart="8dp">
+                        android:orientation="vertical">>
+
 
                         <TextView
+                            android:id="@+id/fideos1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Tres Leches" />
+                            android:text="fideos" />
 
                         <TextView
+                            android:id="@+id/fideos2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="S/9.50" />
+                            android:text="85" />
 
                         <TextView
+                            android:id="@+id/fideos3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="postre tres leches" />
+                            android:text="Pasta alimenticia de harina en forma de cuerda delgada." />
                     </LinearLayout>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
                 app:cardElevation="4dp"
-                app:cardUseCompatPadding="true"
-                android:background="@drawable/btn_trans">
+                app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp">
+                    android:layout_height="110dp">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:id="@+id/img8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
                         android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/mazamorra" />
+                        android:src="@drawable/tresleches" />
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="18dp"
                         android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingStart="8dp">
+                        android:orientation="vertical">>
+
 
                         <TextView
+                            android:id="@+id/garbanzo1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Mazamorra Morada" />
+                            android:text="Garbanzo con pollo" />
 
                         <TextView
+                            android:id="@+id/garbanzo2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="S/9.50" />
+                            android:text="25" />
 
                         <TextView
+                            android:id="@+id/garbanzo3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="postre mazamorra morada" />
+                            android:text=" planta herbácea, de aproximadamente 50 cm de altura, con flores blancas o violetas ." />
                     </LinearLayout>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
                 app:cardElevation="4dp"
-                app:cardUseCompatPadding="true"
-                android:background="@drawable/btn_trans"
-                android:layout_marginBottom="150dp">
+                app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp">
+                    android:layout_height="110dp">
 
                     <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:id="@+id/img9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
                         android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/suspiro" />
+                        android:src="@drawable/tresleches" />
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="18dp"
                         android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingStart="8dp">
+                        android:orientation="vertical">>
+
 
                         <TextView
+                            android:id="@+id/milanesa1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Suspiero Limeña" />
+                            android:text="milanesa de pollo" />
 
                         <TextView
+                            android:id="@+id/milanesa2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="S/9.50" />
+                            android:text="40" />
 
                         <TextView
+                            android:id="@+id/milanesa3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="postre suspiro a la limeña" />
+                            android:text="filete de carne aviar rebozado con pan rallado." />
                     </LinearLayout>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Repite los CardViews restantes con la misma estructura -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:id="@+id/img10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/tresleches" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="18dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">>
+
+
+                        <TextView
+                            android:id="@+id/sudado1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="sudado de pescado" />
+
+                        <TextView
+                            android:id="@+id/sudado2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20" />
+
+                        <TextView
+                            android:id="@+id/sudado3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Posee diferentes vitaminas del grupo B como B1, B2, B3 y B12" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/tresleches" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="18dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">>
+
+
+                        <TextView
+                            android:id="@+id/Pato"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Arroz Con Pato" />
+
+                        <TextView
+                            android:id="@+id/Pato1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15" />
+
+                        <TextView
+                            android:id="@+id/Pato3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Un plato que consta de arroz, verduras." />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/tresleches" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="18dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">>
+
+
+                        <TextView
+                            android:id="@+id/Pollo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Arroz Con Pollo" />
+
+                        <TextView
+                            android:id="@+id/Pollo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="45" />
+
+                        <TextView
+                            android:id="@+id/Pollo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Arroz frito con  piezas de pollo y verduras cortadas en cuadritos," />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
