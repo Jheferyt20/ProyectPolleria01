@@ -4,7 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.menu.MenuFragment">
+    tools:context=".ui.menu.MenuFragment"
+    android:background="@color/gris">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Personales"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/borden_red"
+            android:textColor="@color/app"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Para 2"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/borden_red"
+            android:textColor="@color/app"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="para compartir"
+            android:background="@drawable/borden_red"
+            android:textColor="@color/app"/>
+    </LinearLayout>
+
+
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -12,10 +51,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="60dp">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -24,20 +63,13 @@
                 android:id="@+id/cardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="110dp">
-
-                    <ImageView
-                        android:id="@+id/img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="106dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/cuarto_personal" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -66,6 +98,18 @@
                             android:text="1/4 de pollo, papas regulare, ensalada, cremas y gaseosa" />
                     </LinearLayout>
 
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cuarto_personal" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agregar "
+                        android:layout_gravity="center_horizontal|bottom"/>
+
                 </LinearLayout>
 
 
@@ -74,8 +118,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
                 app:cardElevation="4dp"
+                android:layout_marginTop="-15dp"
                 app:cardUseCompatPadding="true">
 
 
@@ -124,7 +169,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
 
@@ -172,12 +218,11 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- Octavo CardView -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
 
@@ -223,11 +268,11 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Novena CardView -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
 
@@ -273,15 +318,14 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Decima CardView -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
 
-                <!-- Contenido de la tercera CardView -->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -325,11 +369,11 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Tercera CardView -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
 
@@ -376,12 +420,11 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- Cuarta CardView -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="-15dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
 

@@ -7,117 +7,236 @@
     tools:context=".ui.micuenta.MicuentaFragment"
     android:background="@color/gris">
 
-
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="58dp"
-        android:background="@drawable/btn_trans"
-        android:drawableLeft="@drawable/custom_usuario"
-        android:drawablePadding="10dp"
-        android:gravity="center_vertical"
-        android:paddingStart="12dp"
-        android:hint="Nombres"
-        android:textColorHint="@color/grismore"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalScrollbarPosition="defaultPosition"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="58dp"
-        android:background="@drawable/btn_trans"
-        android:drawableLeft="@drawable/custom_usuario"
-        android:drawablePadding="10dp"
-        android:gravity="center_vertical"
-        android:hint="Apellidos"
-        android:paddingStart="12dp"
-        android:textColorHint="@color/grismore"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/usuario"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_trans"
+                android:drawableLeft="@drawable/custom_usuario"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="Usuario"
+                android:paddingStart="12dp"
+                android:textColorHint="@color/grismore"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nombres"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_trans"
+                android:drawableLeft="@drawable/custom_usuario"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="Nombres"
+                android:paddingStart="12dp"
+                android:textColorHint="@color/grismore"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/apellidos"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_trans"
+                android:drawableLeft="@drawable/custom_usuario"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="Apellidos"
+                android:paddingStart="12dp"
+                android:textColorHint="@color/grismore"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nombres" />
+            <TextView
+                android:id="@+id/telefono"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_trans"
+                android:drawableLeft="@drawable/custom_telf"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="Teléfono"
+                android:paddingStart="12dp"
+                android:textColorHint="@color/grismore"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apellidos" />
+            <TextView
+                android:id="@+id/correo"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_trans"
+                android:drawableLeft="@drawable/custom_correo"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="Correo"
+                android:paddingStart="12dp"
+                android:textColorHint="@color/grismore"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/telefono" />
+            <TextView
+                android:id="@+id/direccion"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_trans"
+                android:drawableLeft="@drawable/custom_direc"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="Direccion"
+                android:paddingStart="12dp"
+                android:textColorHint="@color/grismore"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/correo" />
+
+            <Button
+                android:id="@+id/btn_cerrarSesion"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_design"
+                android:drawableStart="@drawable/custom_cerrar"
+                android:gravity="center"
+                android:paddingStart="40dp"
+                android:paddingEnd="51dp"
+                android:text="Cerrar Sesión"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btn_editar"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_design"
+                android:gravity="center"
+                android:paddingStart="40dp"
+                android:paddingEnd="51dp"
+                android:text="Editar"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/selectedContactCardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#C5CAE9"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_editar"
+                android:layout_marginBottom="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
 
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="58dp"
-        android:background="@drawable/btn_trans"
-        android:drawableLeft="@drawable/custom_telf"
-        android:drawablePadding="10dp"
-        android:gravity="center_vertical"
-        android:hint="Teléfono"
-        android:paddingStart="12dp"
-        android:textColorHint="@color/grismore"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <EditText
+                            android:id="@+id/editUsuario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="usuario" />
+
+                        <EditText
+                            android:id="@+id/editNombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="nombres" />
+
+                        <EditText
+                            android:id="@+id/editApellido"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="apellidos" />
+
+                        <EditText
+                            android:id="@+id/editTelefono"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="phone"
+                            android:hint="telefono" />
+
+                        <EditText
+                            android:id="@+id/editDireccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="direccion" />
+
+                        <Button
+                            android:id="@+id/btn_guardar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Guardar"
+                            android:layout_gravity="center"
+                            />
+                        <Button
+                            android:id="@+id/btn_cancelar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Cancelar"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="58dp"
-        android:background="@drawable/btn_trans"
-        android:drawableLeft="@drawable/custom_correo"
-        android:drawablePadding="10dp"
-        android:gravity="center_vertical"
-        android:hint="Correo"
-        android:paddingStart="12dp"
-        android:textColorHint="@color/grismore"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="58dp"
-        android:background="@drawable/btn_trans"
-        android:drawableLeft="@drawable/custom_contra"
-        android:drawablePadding="10dp"
-        android:gravity="center_vertical"
-        android:hint="Contraseña"
-        android:paddingStart="12dp"
-        android:textColorHint="@color/grismore"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="47dp"
-        android:background="@drawable/btn_design"
-        android:drawableStart="@drawable/custom_cerrar"
-        android:gravity="center"
-        android:paddingStart="40dp"
-        android:paddingEnd="51dp"
-        android:text="Cerrar Sesión"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
+    </ScrollView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
