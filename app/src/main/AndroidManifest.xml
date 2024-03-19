@@ -13,24 +13,27 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".descripcion_c"
+            android:exported="false" />
+        <activity
+            android:name=".politica_empresa"
+            android:exported="false" />
+        <activity
             android:name=".Activity_register"
             android:exported="false" />
         <activity
             android:name=".Activity_login"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-        <!-- Actividad principal ahora es .Home -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Actividad principal ahora es .Home -->
         <activity
             android:name=".Home"
             android:exported="false"
-            android:label="@string/title_activity_home"/>
-
-         <!-- Otras actividades de tu aplicación -->
+            android:label="@string/title_activity_home" /> <!-- Otras actividades de tu aplicación -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />

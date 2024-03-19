@@ -10,6 +10,7 @@
     <color name="yellow">#FFEB3B</color>
     <color name="gris">#EEEDED</color>
     <color name="grismore">#8F8F8F</color>
-
+    <color name="red2">#DC6B6B</color>
+    <color name="gris2">#D8D8D8</color>
 
 </resources>
