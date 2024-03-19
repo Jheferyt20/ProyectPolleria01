@@ -22,11 +22,17 @@
             android:orientation="vertical"
             android:gravity="center">
 
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="-8dp"
+                android:src="@drawable/miinfo"/>
+
             <TextView
                 android:id="@+id/usuario"
                 android:layout_width="350dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="-7dp"
                 android:background="@drawable/btn_trans"
                 android:drawableLeft="@drawable/custom_usuario"
                 android:drawablePadding="10dp"
@@ -117,11 +123,44 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/correo" />
 
+
+            <Button
+                android:id="@+id/btn_editar"
+                android:layout_width="230dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/btn_design"
+                android:drawableStart="@drawable/custom_edit_info"
+                android:gravity="center"
+                android:paddingStart="40dp"
+                android:paddingEnd="51dp"
+                android:text="Editar"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btn_politica"
+                android:layout_width="230dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/btn_design"
+                android:drawableStart="@drawable/custom_polit"
+                android:gravity="center"
+                android:paddingStart="40dp"
+                android:paddingEnd="51dp"
+                android:text="Política de la empresa"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
             <Button
                 android:id="@+id/btn_cerrarSesion"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp"
+                android:layout_width="230dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="13dp"
                 android:background="@drawable/btn_design"
                 android:drawableStart="@drawable/custom_cerrar"
                 android:gravity="center"
@@ -129,21 +168,8 @@
                 android:paddingEnd="51dp"
                 android:text="Cerrar Sesión"
                 android:textColor="@color/white"
-                android:textSize="15sp"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/btn_editar"
-                android:layout_width="150dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/btn_design"
-                android:gravity="center"
-                android:paddingStart="40dp"
-                android:paddingEnd="51dp"
-                android:text="Editar"
-                android:textColor="@color/white"
-                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textSize="18sp"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <androidx.cardview.widget.CardView
@@ -151,7 +177,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="19dp"
                 android:layout_marginEnd="24dp"
                 android:visibility="gone"
                 app:cardBackgroundColor="#C5CAE9"
@@ -167,8 +193,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    >
-
+                    android:background="@color/gris2">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -176,59 +201,112 @@
                         android:orientation="vertical"
                         android:padding="4dp">
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="EDITAR INFORMACIÓN"
+                            android:layout_gravity="center"
+                            android:textColor="@color/app"
+                            android:textSize="18sp" />
+
                         <EditText
                             android:id="@+id/editUsuario"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="usuario" />
+                            android:layout_marginVertical="8dp"
+                            android:drawableLeft="@drawable/custom_usuario"
+                            android:drawablePadding="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:hint="Usuario" />
 
                         <EditText
                             android:id="@+id/editNombre"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="nombres" />
+                            android:layout_marginVertical="8dp"
+                            android:drawableLeft="@drawable/custom_usuario"
+                            android:drawablePadding="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:hint="Nombres" />
 
                         <EditText
                             android:id="@+id/editApellido"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="apellidos" />
+                            android:layout_marginVertical="8dp"
+                            android:drawableLeft="@drawable/custom_usuario"
+                            android:drawablePadding="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:hint="Apellidos" />
 
                         <EditText
                             android:id="@+id/editTelefono"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginVertical="8dp"
+                            android:drawableLeft="@drawable/custom_telf"
+                            android:drawablePadding="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
                             android:ems="10"
                             android:inputType="phone"
-                            android:hint="telefono" />
+                            android:hint="Telefono" />
 
                         <EditText
                             android:id="@+id/editDireccion"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="direccion" />
+                            android:layout_marginVertical="8dp"
+                            android:drawableLeft="@drawable/custom_direc"
+                            android:drawablePadding="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:hint="Direccion" />
 
                         <Button
                             android:id="@+id/btn_guardar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_width="160dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="7dp"
                             android:text="Guardar"
+                            android:background="@drawable/btn_design"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
                             android:layout_gravity="center"
-                            />
+                            android:textAllCaps="false" />
                         <Button
                             android:id="@+id/btn_cancelar"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_width="160dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/btn_design"
+                            android:textColor="@color/white"
                             android:text="Cancelar"
+                            android:textSize="18sp"
                             android:layout_gravity="center"
-                            />
+                            android:textAllCaps="false"/>
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
-
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
