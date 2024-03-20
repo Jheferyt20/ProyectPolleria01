@@ -25,6 +25,7 @@
         android:id="@+id/imageView2"
         android:layout_width="391dp"
         android:layout_height="68dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="16:9"
@@ -90,14 +91,16 @@
 
     <Button
         android:id="@+id/queseteantoja"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="-15dp"
         android:background="@drawable/btn_trans"
         android:drawableEnd="@drawable/custom_busq"
         android:paddingStart="1dp"
         android:paddingEnd="19dp"
         android:text="¿QUE SE TE ANTOJA HOY?"
-        android:textColor="#9E9797"
+        android:textColor="@color/grismore"
+        android:textStyle="bold"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,29 +109,12 @@
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="0.1" />
 
-    <Button
-        android:id="@+id/promosexclusivas"
-        android:layout_width="310dp"
-        android:layout_height="135dp"
-        android:text="¡PROMOCIONES EXCLUSIVAS PARA TI!"
-        android:gravity="center_vertical"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:background="@drawable/btn_design"
-        android:drawableEnd="@drawable/custom_prom"
-        android:paddingStart="15dp"
-        android:paddingEnd="9dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/queseteantoja"
-        app:layout_constraintVertical_bias="0.247" />
+
 
     <ImageButton
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginTop="10"
         android:background="@android:color/transparent"
         android:src="@drawable/custom_carrito"
         app:layout_constraintBottom_toBottomOf="parent"
