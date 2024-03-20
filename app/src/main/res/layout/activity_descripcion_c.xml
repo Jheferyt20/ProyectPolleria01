@@ -54,12 +54,12 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="270dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -76,10 +76,81 @@
             android:layout_height="45dp"
             android:layout_gravity="end"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="9dp"
             android:src="@drawable/favoritos_btn" />
     </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="107dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="420dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fondo_descrip" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-49dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/agregar_producto"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_design1"
+            android:layout_marginStart="30dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Agregar" />
+
+
+        <Button
+            android:id="@+id/aumentar"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:background="@drawable/btn_design1"
+            android:text="+" />
+
+
+        <TextView
+            android:id="@+id/cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:text="1" />
+
+
+        <Button
+            android:id="@+id/disminuir"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/btn_design1"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="-" />
+
+    </LinearLayout>
 
 
 </LinearLayout>
