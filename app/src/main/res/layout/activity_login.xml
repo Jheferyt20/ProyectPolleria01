@@ -30,9 +30,10 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="280dp"
+        android:layout_width="260dp"
         android:layout_height="45dp"
         android:background="@drawable/btn_design"
+        android:layout_marginTop="-45dp"
         android:gravity="center"
         android:text="Iniciar Sesión"
         android:textColor="@color/white"
@@ -66,6 +67,7 @@
         android:layout_height="53dp"
         android:background="@drawable/txt_design"
         android:drawableLeft="@drawable/custom_correo"
+        android:layout_marginTop="20dp"
         android:drawablePadding="11dp"
         android:inputType="textEmailAddress"
         android:paddingStart="18dp"
