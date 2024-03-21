@@ -7,9 +7,6 @@
     tools:context=".Ordena_aqui"
     android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-
-
 
     <ImageView
         android:id="@+id/atras"
