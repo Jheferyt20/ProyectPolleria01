@@ -26,24 +26,6 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/precio1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/red_box_background"
-        android:elevation="3dp"
-        android:padding="8dp"
-        android:text="S/.10.00"
-        android:textColor="@android:color/white"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="@+id/promocion10"
-        app:layout_constraintEnd_toEndOf="@+id/promocion10"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/promocion10"
-        app:layout_constraintTop_toTopOf="@+id/promocion10"
-        app:layout_constraintVertical_bias="0.109"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
         android:id="@+id/precio2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,24 +43,6 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
-
-    <Button
-        android:id="@+id/promocion10"
-        android:layout_width="154dp"
-        android:layout_height="100dp"
-        android:background="@drawable/suspiro"
-        android:drawable="@drawable/curve_design"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:padding="16dp"
-        android:text=""
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/promocion11"
-        app:layout_constraintHorizontal_bias="0.696"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="281dp" />
 
     <TextView
         android:id="@+id/precio9"
@@ -102,6 +66,7 @@
         android:id="@+id/promocion3"
         android:layout_width="154dp"
         android:layout_height="98dp"
+        android:layout_marginBottom="112dp"
         android:background="@drawable/suspiro"
         android:drawable="@drawable/curve_design"
         android:drawablePadding="8dp"
@@ -110,17 +75,18 @@
         android:text=""
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="438dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/promocion11"
         android:layout_width="155dp"
         android:layout_height="97dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="268dp"
         android:background="@drawable/suspiro"
         android:drawable="@drawable/curve_design"
         android:drawablePadding="8dp"
@@ -129,9 +95,69 @@
         android:text=""
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="281dp" />
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/postres4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="84dp"
+        android:text="POSTRES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promocion11"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/postres3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="POSTRES"
+        app:layout_constraintEnd_toStartOf="@+id/postres4"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promocion10"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/promocion10"
+        android:layout_width="154dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/suspiro"
+        android:drawable="@drawable/curve_design"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/promocion3"
+        app:layout_constraintEnd_toStartOf="@+id/promocion11"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/precio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_box_background"
+        android:elevation="3dp"
+        android:padding="8dp"
+        android:text="S/.10.00"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/promocion10"
+        app:layout_constraintEnd_toEndOf="@+id/promocion10"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/promocion10"
+        app:layout_constraintTop_toTopOf="@+id/promocion10"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/precio4"
@@ -167,10 +193,12 @@
         android:text=""
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/promocion10"
         app:layout_constraintEnd_toStartOf="@+id/promocion9"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/red_box"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -178,7 +206,7 @@
         android:layout_width="156dp"
         android:layout_height="99dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/suspiro"
         android:drawable="@drawable/curve_design"
         android:drawablePadding="8dp"
@@ -187,8 +215,10 @@
         android:text=""
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/promocion11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/red_box"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <View
@@ -229,51 +259,36 @@
         android:id="@+id/postres1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:text="POSTRES"
+        app:layout_constraintEnd_toStartOf="@+id/postres5"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/promocion6"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="87dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/postres2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="POSTRES"
-        app:layout_constraintTop_toBottomOf="@+id/promocion3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="87dp" />
-
-    <TextView
-        android:id="@+id/postres3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="POSTRES"
-        app:layout_constraintTop_toBottomOf="@+id/promocion10"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="101dp" />
-
-    <TextView
-        android:id="@+id/postres4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="POSTRES"
-        app:layout_constraintTop_toBottomOf="@+id/promocion11"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="270dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promocion3"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/postres5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="60dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
         android:text="POSTRES"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/promocion9"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="270dp" />
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"

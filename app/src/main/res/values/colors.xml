@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="app">#E12F2F</color>
@@ -9,7 +10,7 @@
     <color name="green">#4CAF50</color>
     <color name="yellow">#FFEB3B</color>
     <color name="gris">#EEEDED</color>
+    <color name="gris2">#BFBBBB</color>
     <color name="grismore">#8F8F8F</color>
-
 
 </resources>
