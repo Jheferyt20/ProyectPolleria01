@@ -41,7 +41,7 @@ class InicioFragment : Fragment() {
 
         ordena=binding.ordenaaqui
         antojo=binding.queseteantoja
-        promos=binding.promosexclusivas
+        // promos=binding.promosexclusivas
 
 
         return root

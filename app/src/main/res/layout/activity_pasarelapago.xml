@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris2">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="276dp"
+        android:layout_height="95dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/btn_editar"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:background="@drawable/btn_trans_full"
+        android:gravity="center"
+        android:text="cancelar"
+        android:textColor="@color/grismore"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curve_design"
+        android:drawableLeft="@drawable/custom_numtarjeta"
+        android:drawablePadding="1dp"
+        android:gravity="center_vertical"
+        android:hint="Número de tarjeta"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/gris2"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.028" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="235dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Recuerda activar las compras por internet con tu banco"
+        android:textColor="@color/grismore"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curve_design"
+        android:drawableLeft="@drawable/custom_calender"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:hint="MM/AA"
+        android:paddingStart="19dp"
+        android:textColorHint="@color/gris2"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curve_design"
+        android:drawableLeft="@drawable/custom_cvv"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:hint="CVV"
+        android:paddingStart="7dp"
+        android:textColorHint="@color/gris2"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curve_design"
+        android:drawableLeft="@drawable/custom_usuario"
+        android:drawablePadding="9dp"
+        android:gravity="center_vertical"
+        android:hint="Apellidos"
+        android:paddingStart="17dp"
+        android:textColorHint="@color/gris2"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.059" />
+
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curve_design"
+        android:drawableLeft="@drawable/custom_usuario"
+        android:drawablePadding="9dp"
+        android:gravity="center_vertical"
+        android:hint="Nombres"
+        android:paddingStart="17dp"
+        android:textColorHint="@color/gris2"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curve_design"
+        android:drawableLeft="@drawable/custom_correo"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="Correo Electronico"
+        android:paddingStart="18dp"
+        android:textColorHint="@color/gris2"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.371" />
+
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:background="@drawable/btn_design"
+        android:gravity="center"
+        android:text="Pagar S/59.90"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <ImageView
+        android:layout_width="235dp"
+        android:layout_height="125dp"
+        android:src="@drawable/logosvisas"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
