@@ -7,495 +7,289 @@
     tools:context=".ui.menu.MenuFragment"
     android:background="@color/gris">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp">
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="Personales"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/borden_red"
-            android:textColor="@color/app"/>
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="Para 2"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/borden_red"
-            android:textColor="@color/app"/>
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="para compartir"
-            android:background="@drawable/borden_red"
-            android:textColor="@color/app"/>
-    </LinearLayout>
-
-
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/pollos"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/pollos"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/combos"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <Button
+        android:id="@+id/ensalada"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ensaladas"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/pollos"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promocion"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/parillas"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/parrillas"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/postres"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/postres"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pollos"
+        app:layout_constraintVertical_bias="0.037"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/promocion8"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bebidas"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/parillas"
+        app:layout_constraintEnd_toStartOf="@+id/postres"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ensalada"
+        app:layout_constraintVertical_bias="0.046"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/red_box"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/app"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/atras"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="10dp"
+        android:src="@drawable/atras"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="60dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="19dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/marinera"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Combo Personal"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/marinera3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="1/4 de pollo, papas regulare, ensalada, cremas y gaseosa"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:id="@+id/marinera2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="S/13.52"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <RelativeLayout
-                    android:layout_width="187dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="200dp"
-                    android:layout_marginTop="6dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/img1"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/cuarto_personal" />
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/img1"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="4dp"
-                        android:background="@color/app"
-                        android:textColor="@color/white"
-                        android:text="Agregar S/13.52" />
-                </RelativeLayout>
-
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="4dp"
-                android:layout_marginTop="-15dp"
-                app:cardUseCompatPadding="true">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp">
-
-                    <ImageView
-                        android:id="@+id/img2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="106dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/tresleches" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="18dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">>
-
-
-                        <TextView
-                            android:id="@+id/Mariscos"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Tres Leches" />
-
-                        <TextView
-                            android:id="@+id/Mariscos1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="S/5.45" />
-
-                        <TextView
-                            android:id="@+id/Mariscos3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Bizcocho bañado con 3 tipos de leche distintas" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="30dp"
-                android:layout_marginTop="-15dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
-
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp">
-
-                    <ImageView
-                        android:id="@+id/img7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="106dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/tresleches" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="18dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">>
-
-
-                        <TextView
-                            android:id="@+id/fideos1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="fideos" />
-
-                        <TextView
-                            android:id="@+id/fideos2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="85" />
-
-                        <TextView
-                            android:id="@+id/fideos3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pasta alimenticia de harina en forma de cuerda delgada." />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="30dp"
-                android:layout_marginTop="-15dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp">
-
-                    <ImageView
-                        android:id="@+id/img8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="106dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/tresleches" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="18dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">>
-
-
-                        <TextView
-                            android:id="@+id/garbanzo1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Garbanzo con pollo" />
-
-                        <TextView
-                            android:id="@+id/garbanzo2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="25" />
-
-                        <TextView
-                            android:id="@+id/garbanzo3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text=" planta herbácea, de aproximadamente 50 cm de altura, con flores blancas o violetas ." />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="30dp"
-                android:layout_marginTop="-15dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp">
-
-                    <ImageView
-                        android:id="@+id/img9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="106dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/tresleches" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="18dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">>
-
-
-                        <TextView
-                            android:id="@+id/milanesa1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="milanesa de pollo" />
-
-                        <TextView
-                            android:id="@+id/milanesa2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="40" />
-
-                        <TextView
-                            android:id="@+id/milanesa3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="filete de carne aviar rebozado con pan rallado." />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="30dp"
-                android:layout_marginTop="-15dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp">
-
-                    <ImageView
-                        android:id="@+id/img10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="106dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/tresleches" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="18dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">>
-
-
-                        <TextView
-                            android:id="@+id/sudado1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="sudado de pescado" />
-
-                        <TextView
-                            android:id="@+id/sudado2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="20" />
-
-                        <TextView
-                            android:id="@+id/sudado3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Posee diferentes vitaminas del grupo B como B1, B2, B3 y B12" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="30dp"
-                android:layout_marginTop="-15dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp">
-
-                    <ImageView
-                        android:id="@+id/img3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="106dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/tresleches" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="18dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">>
-
-
-                        <TextView
-                            android:id="@+id/Pato"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Arroz Con Pato" />
-
-                        <TextView
-                            android:id="@+id/Pato1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="15" />
-
-                        <TextView
-                            android:id="@+id/Pato3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Un plato que consta de arroz, verduras." />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="30dp"
-                android:layout_marginTop="-15dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp">
-
-                    <ImageView
-                        android:id="@+id/img4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="106dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/tresleches" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="18dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">>
-
-
-                        <TextView
-                            android:id="@+id/Pollo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Arroz Con Pollo" />
-
-                        <TextView
-                            android:id="@+id/Pollo1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="45" />
-
-                        <TextView
-                            android:id="@+id/Pollo3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Arroz frito con  piezas de pollo y verduras cortadas en cuadritos," />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-    </ScrollView>
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/promocion"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/promociones"
+        android:drawable="@drawable/curve_design"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_box"
+        app:layout_constraintVertical_bias="0.008"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Promociones exclusivas"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/promocion"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/combos"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/combos"
+        android:drawable="@drawable/curve_design"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toEndOf="@+id/promocion"
+        app:layout_constraintTop_toBottomOf="@+id/red_box"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textCombos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Combos"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/combos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Ensaladas"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ensalada"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Pollos"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pollos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textBebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Bebidas"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/promocion8"
+        app:layout_constraintEnd_toStartOf="@+id/textPostres"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textPostres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Postres"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/postres"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textParilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Parrillas"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/parillas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/texto_blanco"
+        android:layout_width="90dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="MENÚ"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/red_box"
+        app:layout_constraintEnd_toEndOf="@id/red_box"
+        app:layout_constraintStart_toStartOf="@id/red_box"
+        app:layout_constraintTop_toTopOf="@id/red_box" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/app"
+        style="@style/BottomNavigationStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
