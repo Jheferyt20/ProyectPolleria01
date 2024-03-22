@@ -8,6 +8,7 @@
     android:background="@color/gris">
 
 
+
     <Button
         android:id="@+id/pollos"
         android:layout_width="105dp"

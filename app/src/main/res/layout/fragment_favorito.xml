@@ -7,6 +7,7 @@
     tools:context=".ui.favorito.FavoritoFragment"
     android:background="@color/gris">
 
+
     <TextView
         android:id="@+id/textF"
         android:layout_width="match_parent"

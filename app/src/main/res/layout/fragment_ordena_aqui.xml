@@ -9,6 +9,8 @@
     android:orientation="vertical">
 
 
+
+
     <ImageView
         android:id="@+id/atras"
         android:layout_width="50dp"

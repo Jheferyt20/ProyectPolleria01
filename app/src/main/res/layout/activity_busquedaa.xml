@@ -7,6 +7,7 @@
     android:background="@color/gris"
     tools:context=".Busquedaa">
 
+
     <View
         android:id="@+id/red_box"
         android:layout_width="match_parent"

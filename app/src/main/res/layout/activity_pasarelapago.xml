@@ -7,6 +7,7 @@
     android:background="@color/gris3">
 
 
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="276dp"
