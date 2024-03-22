@@ -7,190 +7,180 @@
     android:background="@color/gris"
     android:orientation="vertical">
 
-<ScrollView
-android:layout_width="match_parent"
-android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/atras"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"/>
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/atras"
-        android:layout_marginTop="20dp"
-        android:paddingStart="10dp"/>
+            <TextView
+                android:id="@+id/PoliticaTitulo"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Política de Empresa"
+                android:paddingStart="65dp"
+                android:textColor="@color/app"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4" />
 
-    <TextView
-        android:id="@+id/PoliticaTitulo"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Política de Empresa"
-        android:paddingStart="65dp"
-        android:textColor="@color/app"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        android:shadowColor="#000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="4" />
-
-    <TextView
-        android:id="@+id/txtPoliticaDescrip"
-        android:layout_width="374dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:fontFamily="sans-serif-condensed"
-        android:paddingStart="15dp"
-        android:text="En nuestra empresa leñador, nos comprometemos a ofrecer pollo fresco y de calidad. Trabajamos con proveedores confiables, garantizando altos estándares de higiene.Priorizamos prácticas sostenibles y precios justos.La satisfacción del cliente es nuestra prioridad, con un servicio amable y eficiente. Valoramos la responsabilidad social, contribuyendo al bienestar de la comunidad y manteniendo un ambiente de trabajo inclusivo. Nos esforzamos por ser transparentes en nuestros procesos y escuchamos activamente a nuestros clientes para mejorar constantemente.
+            <TextView
+                android:id="@+id/txtPoliticaDescrip"
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingStart="15dp"
+                android:text="En nuestra empresa leñador, nos comprometemos a ofrecer pollo fresco y de calidad. Trabajamos con proveedores confiables, garantizando altos estándares de higiene.Priorizamos prácticas sostenibles y precios justos.La satisfacción del cliente es nuestra prioridad, con un servicio amable y eficiente. Valoramos la responsabilidad social, contribuyendo al bienestar de la comunidad y manteniendo un ambiente de trabajo inclusivo. Nos esforzamos por ser transparentes en nuestros procesos y escuchamos activamente a nuestros clientes para mejorar constantemente.
         ¡Bienvenidos a nuestra pollería, donde la calidad y el servicio van de la mano!"
-        android:textSize="20sp" />
+                android:textSize="20sp" />
 
 
     <!-- uso de la info -->
-    <LinearLayout
-        android:layout_width="358dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="17dp"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="358dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/info" />
+
+                <TextView
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingStart="10dp"
+                    android:text="Uso de la Información"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingStart="15dp"
+                android:text="La información recopilada se utiliza para personalizar la experiencia en la aplicación, procesar transacciones, mejorar el servicio y enviar comunicaciones promocionales con su consentimiento. No compartimos información personal con terceros, a menos que sea necesario para cumplir con requisitos legales."
+                android:textSize="18sp"
+                />
 
 
-        <ImageView
-            android:layout_width="43dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/info" />
+            <!-- consentimiento -->
+            <LinearLayout
+                android:layout_width="358dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
 
 
-        <TextView
-            android:layout_width="303dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
-            android:paddingStart="10dp"
-            android:text="Uso de la Información"
-            android:textSize="23sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/consentimiento" />
 
 
-    <TextView
-        android:layout_width="374dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:fontFamily="sans-serif-condensed"
-        android:paddingStart="15dp"
-        android:text="La información recopilada se utiliza para personalizar la experiencia en la aplicación, procesar transacciones, mejorar el servicio y enviar comunicaciones promocionales con su consentimiento. No compartimos información personal con terceros, a menos que sea necesario para cumplir con requisitos legales."
-        android:textSize="18sp"
-        />
+                <TextView
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingStart="10dp"
+                    android:text="Consentimiento"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingStart="15dp"
+                android:text="Al utilizar nuestra aplicación, usted reconoce que su participación es voluntaria y que consiente el tratamiento de sus datos personales de acuerdo con los términos establecidos en esta Política de Privacidad."
+                android:textSize="18sp"
+                />
+
+
+            <!-- contacto-->
+            <LinearLayout
+                android:layout_width="358dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/contacto" />
+
+                <TextView
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingStart="10dp"
+                    android:text="Contactanos"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingStart="15dp"
+                android:text="Si tiene preguntas, inquietudes o comentarios sobre nuestra Política de Empresa, le invitamos a ponerse en contacto con nuestro equipo de soporte a través del correo electrónico LeñadorP@gmail.com. Estamos disponibles durante 8:00 am hasta 17:00 pm y nos esforzamos por responder en un plazo de dos a tres días hábiles."
+                android:textSize="18sp" />
 
 
 
-
-    <!-- consentimiento -->
-    <LinearLayout
-        android:layout_width="358dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="17dp"
-        android:orientation="horizontal">
-
-
-        <ImageView
-            android:layout_width="43dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/consentimiento" />
-
-
-        <TextView
-            android:layout_width="303dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
-            android:paddingStart="10dp"
-            android:text="Consentimiento"
-            android:textSize="23sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-
-    <TextView
-        android:layout_width="374dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:fontFamily="sans-serif-condensed"
-        android:paddingStart="15dp"
-        android:text="Al utilizar nuestra aplicación, usted reconoce que su participación es voluntaria y que consiente el tratamiento de sus datos personales de acuerdo con los términos establecidos en esta Política de Privacidad."
-        android:textSize="18sp"
-        />
-
-
-    <!-- contacto-->
-    <LinearLayout
-        android:layout_width="358dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="17dp"
-        android:orientation="horizontal">
-
-
-        <ImageView
-            android:layout_width="43dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/contacto" />
-
-
-        <TextView
-            android:layout_width="303dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
-            android:paddingStart="10dp"
-            android:text="Contactanos"
-            android:textSize="23sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-
-    <TextView
-        android:layout_width="374dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:fontFamily="sans-serif-condensed"
-        android:paddingStart="15dp"
-        android:text="Si tiene preguntas, inquietudes o comentarios sobre nuestra Política de Empresa, le invitamos a ponerse en contacto con nuestro equipo de soporte a través del correo electrónico LeñadorP@gmail.com. Estamos disponibles durante 8:00 am hasta 17:00 pm y nos esforzamos por responder en un plazo de dos a tres días hábiles."
-        android:textSize="18sp"
-        />
-
-
-    <!-- finPolitica-->
-    <TextView
-        android:layout_width="374dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:fontFamily="sans-serif-condensed"
-        android:paddingStart="15dp"
-        android:text="Esta política refleja nuestro compromiso de proteger la privacidad del usuario y garantizar un uso adecuado de la información recopilada en la aplicación móvil."
-        android:textSize="18sp"
-        android:paddingBottom="20dp"
-        />
-
+            <!-- finPolitica-->
+            <TextView
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingStart="15dp"
+                android:text="Esta política refleja nuestro compromiso de proteger la privacidad del usuario y garantizar un uso adecuado de la información recopilada en la aplicación móvil."
+                android:textSize="18sp"
+                android:paddingBottom="20dp" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
-</ScrollView>
-    </LinearLayout>
