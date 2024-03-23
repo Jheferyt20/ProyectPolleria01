@@ -17,10 +17,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
+            <Button
+                android:id="@+id/btn_back"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/atras"
+                android:background="@drawable/atras"
                 android:layout_marginTop="20dp"
                 android:paddingStart="10dp"/>
 

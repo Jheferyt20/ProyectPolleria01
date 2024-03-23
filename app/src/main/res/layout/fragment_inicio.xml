@@ -112,6 +112,7 @@
 
 
     <ImageButton
+        android:id="@+id/img_carrito"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="10dp"

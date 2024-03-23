@@ -12,16 +12,16 @@
         tools:layout="@layout/fragment_inicio" />
 
     <fragment
-        android:id="@+id/navigation_favorito"
-        android:name="com.app.proyectpolleria.ui.favorito.FavoritoFragment"
-        android:label="@string/title_favorito"
-        tools:layout="@layout/fragment_favorito" />
-
-    <fragment
         android:id="@+id/navigation_menu"
         android:name="com.app.proyectpolleria.ui.menu.MenuFragment"
         android:label="@string/title_menu"
         tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/navigation_favorito"
+        android:name="com.app.proyectpolleria.ui.favorito.FavoritoFragment"
+        android:label="@string/title_favorito"
+        tools:layout="@layout/fragment_favorito" />
 
     <fragment
         android:id="@+id/navigation_micuenta"
