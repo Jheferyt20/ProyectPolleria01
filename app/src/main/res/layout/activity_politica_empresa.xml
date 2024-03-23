@@ -23,6 +23,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/atras"
                 android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
                 android:paddingStart="10dp"/>
 
             <TextView
@@ -30,6 +31,7 @@
                 android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-50dp"
+                android:layout_marginLeft="20dp"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Política de Empresa"
                 android:paddingStart="65dp"
