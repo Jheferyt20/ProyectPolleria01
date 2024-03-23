@@ -1,23 +1,21 @@
 package com.app.proyectpolleria
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
-class descripcion_c : AppCompatActivity() {
+class Activity_carrito: AppCompatActivity() {
+    private lateinit var btnBack: Button
 
-    private lateinit var btnBack: ImageButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_descripcion_c)
+        setContentView(R.layout.activity_carritouno)
 
         btnBack = findViewById(R.id.btn_back)
 
         btnBack.setOnClickListener {
             goBack()
         }
-
     }
 
     private fun goBack() {

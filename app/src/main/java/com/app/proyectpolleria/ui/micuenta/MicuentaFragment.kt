@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.app.proyectpolleria.Activity_login
 import com.app.proyectpolleria.databinding.FragmentMicuentaBinding
+import com.app.proyectpolleria.politica_empresa
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -27,6 +28,7 @@ class MicuentaFragment : Fragment() {
     private lateinit var btnCerrarSesion: Button
     private lateinit var btnEditar: Button
     private lateinit var btnGuardar: Button
+    private lateinit var btnPolitica: Button
     private lateinit var btnCancelar: Button
     private lateinit var vusuario: EditText
     private lateinit var vnombre: EditText
@@ -73,7 +75,7 @@ class MicuentaFragment : Fragment() {
         telefono=binding.telefono
         correo=binding.correo
         direccion=binding.direccion
-
+        btnPolitica=binding.btnPolitica
 
 
         editar()
@@ -102,6 +104,11 @@ class MicuentaFragment : Fragment() {
             cardview.setVisibility(
                 View.GONE
             )
+        }
+
+        btnPolitica.setOnClickListener {
+            val intent = Intent(context, politica_empresa::class.java)
+            startActivity(intent)
         }
 
         return root
