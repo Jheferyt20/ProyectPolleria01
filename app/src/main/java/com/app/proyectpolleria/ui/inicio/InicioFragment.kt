@@ -15,6 +15,7 @@ import com.app.proyectpolleria.Activity_carrito
 import com.app.proyectpolleria.Activity_register
 import com.app.proyectpolleria.R
 import com.app.proyectpolleria.databinding.FragmentInicioBinding
+import com.app.proyectpolleria.databinding.FragmentOrdenaAquiBinding
 import com.app.proyectpolleria.politica_empresa
 import com.app.proyectpolleria.ui.menu.MenuFragment
 import com.app.proyectpolleria.ui.menu.MenuViewModel
@@ -53,6 +54,12 @@ class InicioFragment : Fragment() {
             startActivity(intent)
         }
 
+        ordena.setOnClickListener {
+            // Navegar al fragmento "fragmento_ordena_aqui" utilizando el NavController
+            findNavController().navigate(R.id.fragmento_ordena_aqui)
+        }
+
+
         return root
     }
 
@@ -63,4 +70,6 @@ class InicioFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
 }

@@ -28,4 +28,12 @@
         android:name="com.app.proyectpolleria.ui.micuenta.MicuentaFragment"
         android:label="@string/title_micuenta"
         tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/fragmento_ordena_aqui"
+        android:name="com.app.proyectpolleria.ui.ordena.Ordena_aqui"
+        android:label="Ordena Aquí"
+        tools:layout="@layout/fragment_ordena_aqui" />
+
+
 </navigation>
