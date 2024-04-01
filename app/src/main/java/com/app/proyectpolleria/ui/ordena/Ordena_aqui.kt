@@ -11,7 +11,7 @@ import com.app.proyectpolleria.R
  * A simple [Fragment] subclass.
  */
 class Ordena_aqui : Fragment() {
-    // Parámetros estáticos para argumentos
+
     companion object {
         const val ARG_PARAM1 = "param1"
         const val ARG_PARAM2 = "param2"
@@ -26,7 +26,7 @@ class Ordena_aqui : Fragment() {
             }
     }
 
-    // Variables para almacenar los argumentos
+
     private var param1: String? = null
     private var param2: String? = null
 
@@ -42,7 +42,7 @@ class Ordena_aqui : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_ordena_aqui, container, false)
     }
 
