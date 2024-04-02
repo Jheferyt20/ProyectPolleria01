@@ -253,6 +253,7 @@
                             android:textStyle="bold"
                             android:hint="Apellidos" />
 
+
                         <EditText
                             android:id="@+id/editTelefono"
                             android:layout_width="match_parent"
