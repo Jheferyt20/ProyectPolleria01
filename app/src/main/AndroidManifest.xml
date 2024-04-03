@@ -13,6 +13,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".delivery_distritos"
+            android:exported="false" />
+        <activity
             android:name=".Google_maps_api"
             android:exported="false" />
 
@@ -22,16 +25,16 @@
 
         <activity
             android:name=".Home"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".politica_empresa"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".descripcion_c"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Activity_carrito"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Busquedaa"
             android:exported="false" />
@@ -40,7 +43,7 @@
             android:exported="false" />
         <activity
             android:name=".Busqueda_combos"
-            android:exported="false"></activity> <!-- Actividad principal ahora es .Home -->
+            android:exported="false" /> <!-- Actividad principal ahora es .Home -->
         <activity
             android:name=".Activity_login"
             android:exported="true">
@@ -53,8 +56,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
-
     </application>
 
 </manifest>
