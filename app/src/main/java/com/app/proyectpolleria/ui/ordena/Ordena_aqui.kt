@@ -46,6 +46,4 @@ class Ordena_aqui : Fragment() {
         return inflater.inflate(R.layout.fragment_ordena_aqui, container, false)
     }
 
-
-
 }

@@ -13,25 +13,25 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".Home"
-            android:exported="false">
+            android:name=".Google_maps_api"
+            android:exported="false" />
 
-        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_ki" />
+
+        <activity
+            android:name=".Home"
+            android:exported="false"></activity>
         <activity
             android:name=".politica_empresa"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".descripcion_c"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".Activity_carrito"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".Busquedaa"
             android:exported="false" />
@@ -40,20 +40,16 @@
             android:exported="false" />
         <activity
             android:name=".Busqueda_combos"
-            android:exported="false">
-
-        </activity>
-        <!-- Actividad principal ahora es .Home -->
+            android:exported="false"></activity> <!-- Actividad principal ahora es .Home -->
         <activity
             android:name=".Activity_login"
-            android:exported="true"
-            > <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-        <!-- Otras actividades de tu aplicación -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Otras actividades de tu aplicación -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
