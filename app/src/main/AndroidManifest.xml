@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -13,26 +10,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProyectPolleria"
-        tools:targetApi="31" >
-        <activity
-            android:name=".ComprasActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DatosActivity"
-            android:exported="false" />
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
         <activity
             android:name=".Home"
-            android:exported="false" />
+            android:exported="false">
+
+        </activity>
         <activity
             android:name=".politica_empresa"
-            android:exported="false" />
+            android:exported="false">
+
+        </activity>
         <activity
             android:name=".descripcion_c"
-            android:exported="false" />
+            android:exported="false">
+
+        </activity>
         <activity
             android:name=".Activity_carrito"
-            android:exported="false" />
+            android:exported="false">
+
+        </activity>
         <activity
             android:name=".Busquedaa"
             android:exported="false" />
@@ -41,16 +40,20 @@
             android:exported="false" />
         <activity
             android:name=".Busqueda_combos"
-            android:exported="false" /> <!-- Actividad principal ahora es .Home -->
+            android:exported="false">
+
+        </activity>
+        <!-- Actividad principal ahora es .Home -->
         <activity
             android:name=".Activity_login"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"
+            > <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> <!-- Otras actividades de tu aplicación -->
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <!-- Otras actividades de tu aplicación -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
