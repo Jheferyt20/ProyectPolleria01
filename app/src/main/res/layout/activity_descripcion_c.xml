@@ -73,13 +73,21 @@
             android:textSize="45sp" />
 
         <ImageView
-            android:id="@+id/favorito_agregar"
+            android:id="@+id/favorito_pintado"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_gravity="end"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="9dp"
-            android:src="@drawable/favoritos_btn" />
+            android:src="@drawable/baseline_favorite_24" />
+        <ImageView
+            android:id="@+id/favorito_sin"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="9dp"
+            android:src="@drawable/baseline_favorite_border_24" />
     </LinearLayout>
 
     <LinearLayout
