@@ -101,7 +101,7 @@
         android:background="@drawable/btn_trans"
         android:drawableEnd="@drawable/custom_busq"
         android:paddingStart="1dp"
-        android:paddingEnd="15dp"
+        android:paddingEnd="20dp"
         android:drawablePadding="40dp"
         android:text="¿QUE SE TE ANTOJA HOY?"
         android:textColor="@color/grismore"
