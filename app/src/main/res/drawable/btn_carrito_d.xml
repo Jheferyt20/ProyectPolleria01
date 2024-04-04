@@ -4,6 +4,6 @@
         android:drawable="@drawable/carrito2"
         android:width="45dp"
         android:height="45dp"
-        android:left="20dp"
+        android:left="15dp"
         />
 </layer-list>

@@ -7,6 +7,13 @@
     android:background="@color/gris"
     tools:context=".Busqueda_combos">
 
+    <View
+        android:id="@+id/red_box"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/app"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/promocion11"
@@ -31,7 +38,7 @@
         android:layout_width="200dp"
         android:layout_height="175dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/combo_duo"
         android:drawable="@drawable/curve_design"
         android:drawablePadding="8dp"
@@ -48,7 +55,7 @@
         android:id="@+id/promocion6"
         android:layout_width="200dp"
         android:layout_height="175dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/combo_familiar"
         android:drawable="@drawable/curve_design"
         android:drawablePadding="8dp"
@@ -84,11 +91,12 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
+
     <Button
         android:id="@+id/promocion3"
         android:layout_width="200dp"
         android:layout_height="175dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="4dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/combo_mega_familiar"
         android:drawable="@drawable/curve_design"
@@ -101,14 +109,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
-
-    <View
-        android:id="@+id/red_box"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/app"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageButton
         android:id="@+id/btn_back"

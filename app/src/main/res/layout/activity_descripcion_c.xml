@@ -92,17 +92,17 @@
         <Button
             android:id="@+id/agregar_producto"
             android:layout_width="282dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="30dp"
             android:background="@drawable/btn_design"
             android:drawableLeft="@drawable/btn_carrito_d"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="28dp"
             android:text="Agregar al carrito"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18dp"
-            android:paddingEnd="50dp"
-            android:gravity="center_vertical|end"
             android:textStyle="bold" />
 
 
