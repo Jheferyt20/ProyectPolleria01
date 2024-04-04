@@ -29,7 +29,7 @@
         android:layout_width="135dp"
         android:layout_height="125dp"
         android:layout_marginTop="120dp"
-        android:background="@drawable/combos"
+        android:background="@drawable/combo_mega_familiar"
         android:drawablePadding="8dp"
         android:gravity="center_vertical|center_horizontal"
         android:padding="16dp"
