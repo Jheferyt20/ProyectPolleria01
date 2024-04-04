@@ -17,6 +17,9 @@ class Home : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
+
+
 
         val navView = binding.navView
 
@@ -30,7 +33,6 @@ class Home : AppCompatActivity() {
 
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
 
     }
 }

@@ -16,22 +16,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btn_back"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnAtras"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/atras"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:paddingStart="10dp"/>
+                app:cardCornerRadius="100dp"
+                android:layout_marginLeft="15dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/atras"
+                    android:background="@color/app"/>
+            </androidx.cardview.widget.CardView>
+
 
             <TextView
                 android:id="@+id/PoliticaTitulo"
                 android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-50dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="15dp"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Política de Empresa"
                 android:paddingStart="65dp"

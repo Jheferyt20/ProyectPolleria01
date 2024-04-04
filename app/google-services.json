@@ -1,26 +1,44 @@
 {
   "project_info": {
-    "project_number": "153263675477",
-    "project_id": "pollerialenador-2024",
-    "storage_bucket": "pollerialenador-2024.appspot.com"
+    "project_number": "521636078428",
+    "project_id": "polleria-7d74d",
+    "storage_bucket": "polleria-7d74d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:153263675477:android:c137918452f459a72f5cdc",
+        "mobilesdk_app_id": "1:521636078428:android:181617fa1dbbea22b65799",
         "android_client_info": {
           "package_name": "com.app.proyectpolleria"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "521636078428-2c7969nm713utslacgto46t5mb5jpprv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.proyectpolleria",
+            "certificate_hash": "30e934d75722e8dd41fd0bfd4abb594add77102a"
+          }
+        },
+        {
+          "client_id": "521636078428-c9th6goutot1rl3pjufc7geqjkbce52h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDjYZ9OyHa-rTiuaa2MaHd0MezReED3HyQ"
+          "current_key": "AIzaSyAfZzms_NNK9cgqGm6ZIeN5eueQEV_JWbk"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521636078428-c9th6goutot1rl3pjufc7geqjkbce52h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

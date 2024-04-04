@@ -1,29 +1,20 @@
 package com.app.proyectpolleria
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
+import androidx.appcompat.widget.Toolbar
 
-class politica_empresa : AppCompatActivity() {
-
-    private lateinit var btnBack: CardView
-
+class DatosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_politica_empresa)
+        setContentView(R.layout.activity_datos)
 
-        btnBack = findViewById(R.id.btnAtras)
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        toolbar.setTitle("Datos Personales")
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-        btnBack.setOnClickListener {
-            goBack()
-        }
-    }
-
-    private fun goBack() {
-        // Finaliza la actividad actual
-        finish()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
