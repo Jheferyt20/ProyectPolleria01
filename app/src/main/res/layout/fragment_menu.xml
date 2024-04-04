@@ -223,7 +223,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
-
     <TextView
         android:id="@+id/textParilla"
         android:layout_width="wrap_content"
