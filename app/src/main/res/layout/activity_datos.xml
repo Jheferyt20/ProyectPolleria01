@@ -35,7 +35,7 @@
         android:id="@+id/btnPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cmabiar foto de Perfil"
+        android:text="Cambiar foto de Perfil"
         android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
         android:textSize="15dp"
@@ -134,7 +134,7 @@
 
     <Button
         android:id="@+id/btneditar"
-        android:layout_width="350dp"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/app"

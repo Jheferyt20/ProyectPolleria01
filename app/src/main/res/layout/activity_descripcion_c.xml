@@ -24,9 +24,9 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="200dp"
+            android:layout_width="240dp"
             android:layout_height="200dp"
-            android:src="@drawable/combos"
+            android:src="@drawable/combo_mega_familiar_d"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"/>
 
@@ -46,7 +46,7 @@
             android:gravity="center"
             android:fontFamily="sans-serif-condensed"
             android:layout_marginTop="10dp"
-            android:text="1 pollo entero, medio pollo, 2 porciones de papas, ensalada y cremas."
+            android:text="2 pollo enteros, 2 porciones de papas, ensalada, cremas y gaseosa."
             android:textSize="24dp"/>
 
 
@@ -69,7 +69,7 @@
             android:layout_marginTop="-6dp"
             android:layout_marginStart="10dp"
             android:textColor="@color/app"
-            android:text="S/79.90"
+            android:text="S/89.90"
             android:textSize="45sp" />
 
         <ImageView
@@ -99,11 +99,14 @@
 
         <Button
             android:id="@+id/agregar_producto"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_marginStart="30dp"
             android:background="@drawable/btn_design"
             android:drawableLeft="@drawable/btn_carrito_d"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="28dp"
             android:text="Agregar al carrito"
             android:textAllCaps="false"
             android:textColor="@color/white"

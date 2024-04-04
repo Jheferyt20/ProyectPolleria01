@@ -29,6 +29,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="18dp"
         android:hint="Correo"
+
         android:textColorHint="@color/grismore" />
 
     <EditText
@@ -46,10 +47,9 @@
         android:textColorHint="@color/grismore" />
 
 
-
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="260dp"
+        android:layout_width="240dp"
         android:layout_height="45dp"
         android:background="@drawable/btn_design"
         android:layout_gravity="center_horizontal"
@@ -57,36 +57,58 @@
         android:text="Iniciar Sesión"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:textStyle="bold"
         android:layout_marginTop="50dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="━━━━━━   Iniciar sesión con   ━━━━━━"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/gris3"
+        android:textSize="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="75dp"
+        app:cardBackgroundColor="@color/gris">
 
     <Button
         android:id="@+id/btnGoogle"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
         android:drawableLeft="@drawable/ic_google"
-        android:text="Google"
-        android:layout_gravity="center_horizontal"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:padding="14dp"
         android:textColor="@color/black"
-        android:textSize="15dp"
-        android:layout_marginTop="15dp"
-        tools:ignore="MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="570dp" />
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+</androidx.cardview.widget.CardView>
 
 
     <Button
         android:id="@+id/btn_register"
         android:layout_width="293dp"
         android:layout_height="60dp"
-        android:background="@drawable/btn_trans_full"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_trans_full"
+        android:gravity="center"
         android:text="¿Aun no tienes una cuenta?\nRegistrate aquí"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="15sp"
-        android:textStyle="bold|italic"
-         />
+        android:textSize="17sp"
+        android:textStyle="bold|italic" />
 
 </LinearLayout>

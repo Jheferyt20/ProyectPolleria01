@@ -13,10 +13,10 @@
 
     <ImageView
         android:id="@+id/atras"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:src="@drawable/atras"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:paddingStart="10dp"
         tools:ignore="MissingConstraints" />
 
@@ -24,31 +24,31 @@
         android:id="@+id/OrdenaAqui"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="        Ordena Aqui"
         android:paddingStart="65dp"
-        android:textColor="@color/app"
-        android:textSize="35sp"
-        android:textStyle="bold"
         android:shadowColor="#000000"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="4"
-        tools:ignore="MissingConstraints" />
+        android:text="        Ordena Aqui"
+        android:textColor="@color/app"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <View
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="1dp"
-        android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:color/black"
+        android:background="@color/grismore"
         app:layout_constraintBottom_toTopOf="@+id/delivery"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/OrdenaAqui"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintVertical_bias="0.205"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -97,18 +97,10 @@
         app:layout_constraintTop_toBottomOf="@+id/delivery"
         app:layout_constraintVertical_bias="0.033" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="@color/app"
-        style="@style/BottomNavigationStyle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+
+
+
+
 
 
 

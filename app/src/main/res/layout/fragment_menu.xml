@@ -8,169 +8,42 @@
     android:background="@color/gris">
 
 
-
-    <Button
-        android:id="@+id/pollos"
-        android:layout_width="105dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="52dp"
-        android:background="@drawable/pollos"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:padding="16dp"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/combos"
-        tools:ignore="MissingConstraints" />
-
-
-
     <Button
         android:id="@+id/ensalada"
-        android:layout_width="105dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/ensaladas"
+        android:layout_width="135dp"
+        android:layout_height="125dp"
+        android:drawableLeft="@drawable/ensaladas"
         android:drawablePadding="8dp"
         android:gravity="center_vertical|center_horizontal"
-        android:padding="16dp"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/pollos"
-        app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/promocion"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/parillas"
-        android:layout_width="105dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/parrillas"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:padding="16dp"
-        android:text=""
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.836"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/promocion8"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/postres"
-        android:layout_width="105dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="52dp"
-        android:background="@drawable/postres"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:padding="16dp"
-        android:text=""
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pollos"
-        app:layout_constraintVertical_bias="0.037"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/promocion8"
-        android:layout_width="105dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/bebidas"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:padding="16dp"
-        android:text=""
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/postres"
-        app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ensalada"
-        tools:ignore="MissingConstraints" />
-
-
-    <Button
-        android:id="@+id/promocion"
-        android:layout_width="105dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/promociones"
-        android:drawable="@drawable/curve_design"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:padding="16dp"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Promociones exclusivas"
-        android:textStyle="bold"
-        android:textSize="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/promocion"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="120dp" />
 
     <Button
         android:id="@+id/combos"
-        android:layout_width="105dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/combos"
-        android:drawable="@drawable/curve_design"
+        android:layout_width="135dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/combo_mega_familiar"
         android:drawablePadding="8dp"
         android:gravity="center_vertical|center_horizontal"
         android:padding="16dp"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
-        app:layout_constraintStart_toEndOf="@+id/promocion"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textCombos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Combos"
-        android:textSize="17dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/combos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif-condensed"
         android:text="Ensaladas"
         android:textSize="18dp"
@@ -179,48 +52,23 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Pollos"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/pollos"
+    <Button
+        android:id="@+id/parillas"
+        android:layout_width="135dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/parrillas"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.608"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textBebida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Bebidas"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/promocion8"
-        app:layout_constraintEnd_toStartOf="@+id/textPostres"
-        app:layout_constraintHorizontal_bias="0.358"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textPostres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Postres"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/postres"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/postres"
+        app:layout_constraintTop_toBottomOf="@+id/promocion8"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -234,11 +82,116 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/parillas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintHorizontal_bias="0.765"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/textPostres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Postres"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/postres"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/promocion8"
+        android:layout_width="135dp"
+        android:layout_height="125dp"
+        android:background="@drawable/bebidas"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Pollos"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pollos"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/pollos"
+        android:layout_width="135dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/pollos"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/combos"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textBebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="268dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Bebidas"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/promocion8"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/postres"
+        android:layout_width="135dp"
+        android:layout_height="125dp"
+        android:background="@drawable/postres"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <TextView
+        android:id="@+id/textCombos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Combos"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/combos"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
