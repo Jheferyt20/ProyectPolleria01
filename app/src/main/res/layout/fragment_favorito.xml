@@ -18,10 +18,11 @@
         android:textAlignment="center"
         android:text="@string/text_favoritos"
         android:textSize="20sp"
+        android:textColor="@color/grismore"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        /> <!-- Usar la fuente monospace predeterminada -->
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,6 @@
     tools:context=".Activity_register">
 
 
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
@@ -15,8 +14,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/logoi"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
-
+        tools:layout_editor_absoluteY="-71dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -32,13 +30,14 @@
 
     <Button
         android:id="@+id/btn_auntentication"
-        android:layout_width="260dp"
+        android:layout_width="240dp"
         android:layout_height="45dp"
         android:background="@drawable/btn_design"
         android:gravity="center"
         android:text="Registrar"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

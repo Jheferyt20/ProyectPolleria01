@@ -18,8 +18,8 @@
             android:orientation="vertical">
             <androidx.cardview.widget.CardView
                 android:id="@+id/btnAtras"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
                 android:layout_marginTop="20dp"
                 app:cardCornerRadius="100dp"
                 android:layout_marginLeft="15dp">
@@ -27,7 +27,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/atras"
-                    android:background="@color/app"/>
+                    android:background="@color/gris"/>
             </androidx.cardview.widget.CardView>
 
 
@@ -56,6 +56,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-condensed"
                 android:paddingStart="15dp"
+                android:textColor="@color/black2"
                 android:text="En nuestra empresa leñador, nos comprometemos a ofrecer pollo fresco y de calidad. Trabajamos con proveedores confiables, garantizando altos estándares de higiene.Priorizamos prácticas sostenibles y precios justos.La satisfacción del cliente es nuestra prioridad, con un servicio amable y eficiente. Valoramos la responsabilidad social, contribuyendo al bienestar de la comunidad y manteniendo un ambiente de trabajo inclusivo. Nos esforzamos por ser transparentes en nuestros procesos y escuchamos activamente a nuestros clientes para mejorar constantemente.
         ¡Bienvenidos a nuestra pollería, donde la calidad y el servicio van de la mano!"
                 android:textSize="20sp" />
@@ -84,6 +85,7 @@
                     android:paddingStart="10dp"
                     android:text="Uso de la Información"
                     android:textSize="23sp"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -94,6 +96,7 @@
                 android:layout_marginTop="5dp"
                 android:fontFamily="sans-serif-condensed"
                 android:paddingStart="15dp"
+                android:textColor="@color/black2"
                 android:text="La información recopilada se utiliza para personalizar la experiencia en la aplicación, procesar transacciones, mejorar el servicio y enviar comunicaciones promocionales con su consentimiento. No compartimos información personal con terceros, a menos que sea necesario para cumplir con requisitos legales."
                 android:textSize="18sp"
                 />
@@ -135,6 +138,7 @@
                 android:layout_marginTop="5dp"
                 android:fontFamily="sans-serif-condensed"
                 android:paddingStart="15dp"
+                android:textColor="@color/black2"
                 android:text="Al utilizar nuestra aplicación, usted reconoce que su participación es voluntaria y que consiente el tratamiento de sus datos personales de acuerdo con los términos establecidos en esta Política de Privacidad."
                 android:textSize="18sp"
                 />
@@ -174,6 +178,7 @@
                 android:layout_marginTop="5dp"
                 android:fontFamily="sans-serif-condensed"
                 android:paddingStart="15dp"
+                android:textColor="@color/black2"
                 android:text="Si tiene preguntas, inquietudes o comentarios sobre nuestra Política de Empresa, le invitamos a ponerse en contacto con nuestro equipo de soporte a través del correo electrónico LeñadorP@gmail.com. Estamos disponibles durante 8:00 am hasta 17:00 pm y nos esforzamos por responder en un plazo de dos a tres días hábiles."
                 android:textSize="18sp" />
 
@@ -189,6 +194,7 @@
                 android:paddingStart="15dp"
                 android:text="Esta política refleja nuestro compromiso de proteger la privacidad del usuario y garantizar un uso adecuado de la información recopilada en la aplicación móvil."
                 android:textSize="18sp"
+                android:textColor="@color/black2"
                 android:paddingBottom="20dp" />
         </LinearLayout>
     </ScrollView>
