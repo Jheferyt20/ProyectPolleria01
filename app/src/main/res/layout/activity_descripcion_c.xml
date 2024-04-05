@@ -7,13 +7,12 @@
     android:background="@color/gris"
     android:orientation="vertical">
 
-
-
     <ImageButton
         android:id="@+id/btn_back"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/atras"
+        android:layout_gravity="center_vertical"
         android:layout_marginTop="20dp"
         android:paddingStart="10dp"
         android:layout_marginLeft="10dp"/>
