@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris"
+    android:id="@+id/item_favoritos"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_fav"
+                android:layout_width="99dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/combos" />
+
+            <TextView
+                android:id="@+id/txt_nomPlato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/img_fav"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/img_fav"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Combo Mega Familiar"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_nomPlato"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="-26dp"
+                android:layout_toEndOf="@id/img_fav"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="S/89.00"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnPedir"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_precio"
+                android:layout_alignStart="@id/txt_precio"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Pedir"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/favorito_pintado"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/txt_precio"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/baseline_favorite_24" />
+
+            <ImageView
+                android:id="@+id/favorito_sin"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/txt_precio"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="7dp"
+                android:layout_toStartOf="@id/favorito_pintado"
+                android:src="@drawable/baseline_favorite_border_24" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

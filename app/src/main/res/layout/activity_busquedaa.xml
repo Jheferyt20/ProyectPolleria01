@@ -52,7 +52,7 @@
         android:paddingStart="1dp"
         android:paddingEnd="19dp"
         android:text="¿QUE SE TE ANTOJA HOY?"
-        android:textColor="@color/black2"
+        android:textColor="@color/white"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

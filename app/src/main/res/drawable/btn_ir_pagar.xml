@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:drawable="@drawable/busqueda"
-        android:width="33dp"
-        android:height="33dp"
-        android:left="19dp"
+        android:drawable="@drawable/ir_pagar"
+        android:width="45dp"
+        android:height="45dp"
+        android:left="15dp"
         />
 </layer-list>
