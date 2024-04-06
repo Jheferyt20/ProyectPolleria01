@@ -113,9 +113,10 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="90dp"
                 android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="Monto total:"
-                android:textStyle="bold"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtPrecio_total"
@@ -124,8 +125,9 @@
                 android:layout_marginStart="245dp"
                 android:layout_marginTop="90dp"
                 android:layout_marginEnd="15dp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="S/89.90"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
 
 
         </RelativeLayout>
