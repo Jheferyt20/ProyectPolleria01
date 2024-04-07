@@ -89,31 +89,36 @@
             android:src="@drawable/baseline_favorite_border_24" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="345dp"
+    <Button
+        android:id="@+id/agregar_producto"
+        android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="95dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/agregar_producto"
-            android:layout_width="282dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="30dp"
-            android:background="@drawable/btn_design"
-            android:drawableLeft="@drawable/btn_carrito_d"
-            android:gravity="center_vertical|end"
-            android:paddingEnd="28dp"
-            android:text="Agregar al carrito"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+        android:background="@drawable/btn_design"
+        android:drawableLeft="@drawable/btn_carrito_d"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Agregar al carrito"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/fin_compra"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_design"
+        android:drawableLeft="@drawable/btn_ir_pagar"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Ir a pagar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
