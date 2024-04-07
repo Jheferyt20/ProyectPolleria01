@@ -35,7 +35,7 @@ class MenuFragment : Fragment() {
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        btnCombos=binding.combos
+
 
         btnCombos.setOnClickListener {
             val intent = Intent(context, Busqueda_combos::class.java)

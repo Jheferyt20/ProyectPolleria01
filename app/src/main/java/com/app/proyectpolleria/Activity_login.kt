@@ -8,6 +8,8 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.app.proyectpolleria.Entidad.Usuario
+import com.app.proyectpolleria.Negocio.UsuarioNegocio
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -23,9 +25,9 @@ class Activity_login : AppCompatActivity() {
     private lateinit var btngoogle: Button
     private lateinit var txtcorreo: EditText
     private lateinit var txtcontra: EditText
-
     private lateinit var auth: FirebaseAuth
     private lateinit var iniciogoogle: GoogleSignInClient
+    private val clNegocio = UsuarioNegocio()
 
     companion object {
         private const val RC_SIGN_IN = 9001
@@ -44,7 +46,26 @@ class Activity_login : AppCompatActivity() {
 
         crearSolicitud()
 
-        singIn()
+        btnLogin.setOnClickListener {
+            val correo = txtcorreo.text.toString().trim()
+            val clave = txtcontra.text.toString().trim()
+            val mensaje = StringBuilder()
+            val exitoso = clNegocio.LoguearUsuario(correo, clave , mensaje)
+
+            if (exitoso) {
+                startActivity(Intent(this, Home::class.java))
+            } else {
+
+                // Verificar si hay un mensaje de error y mostrarlo
+                if (mensaje.isNotEmpty()) {
+                    Toast.makeText(this, "Error al iniciar sesión: $mensaje", Toast.LENGTH_SHORT).show()
+                } else {
+                    // Si no hay mensaje de error, mostrar un mensaje genérico
+                    Toast.makeText(this, "Error al iniciar sesión", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
 
         btngoogle.setOnClickListener { Iniciogoogle() }
 
@@ -53,26 +74,7 @@ class Activity_login : AppCompatActivity() {
         }
     }
 
-    private fun singIn() {
-        title = "Sing In"
 
-        btnLogin.setOnClickListener {
-            if (!txtcorreo.text.toString().isEmpty() && !txtcontra.text.toString().isEmpty()) {
-                FirebaseAuth.getInstance().signInWithEmailAndPassword(
-                    txtcorreo.text.toString(),
-                    txtcontra.text.toString()
-                ).addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        // Éxito al acceder
-                        val email = task.result?.user?.email ?: ""
-                        showHome(email)
-                    } else {
-                        showAlert()
-                    }
-                }
-            }
-        }
-    }
 
     private fun guardarEstadoInicioSesion(email: String) {
         val preferences = getSharedPreferences("sesion", Context.MODE_PRIVATE)
@@ -90,12 +92,11 @@ class Activity_login : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun showHome(email: String) {
-        val homeIntent = Intent(this, Home::class.java).apply {
-            putExtra("email", email)
-        }
+    private fun showHome() {
+        val homeIntent = Intent(this, Home::class.java)
         startActivity(homeIntent)
     }
+
 
     private fun Iniciogoogle() {
         val signInIntent = iniciogoogle.signInIntent
@@ -131,11 +132,43 @@ class Activity_login : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val user = auth.currentUser
-                    val email = user?.email ?: ""
-                    showHome(email)
+                    if (task.result?.additionalUserInfo?.isNewUser == true) {
+                        val photoUri = user?.photoUrl
+                        val usuario = Usuario().apply {
+                            nombre = user?.displayName
+                            apellido = account?.familyName
+                            correo = user?.email
+                            img = photoUri?.toString() ?: ""
+                        }
+
+                        registrarUsuarioConGoogle(usuario)
+                    } else {
+                        // El usuario ya existe, mostrar mensaje de error
+                        showHome()
+                    }
                 } else {
+                    // Mostrar mensaje de error en caso de fallo en la autenticación
                     Toast.makeText(this, "Hubo problemas", Toast.LENGTH_SHORT).show()
                 }
             }
     }
+
+    private fun registrarUsuarioConGoogle(usuario: Usuario) {
+        val mensaje = StringBuilder()
+        val resultado = clNegocio.ResgistrarUsuarioGoogle(usuario, mensaje)
+
+        if (resultado != 0) {
+            showHome()
+        } else {
+            if (mensaje.isNotEmpty()) {
+                Toast.makeText(this, "Error al registrar usuario: ${mensaje.toString()}", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Error al registrar usuario", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+
+
+
 }

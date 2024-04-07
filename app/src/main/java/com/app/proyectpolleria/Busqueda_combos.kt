@@ -15,16 +15,13 @@ class Busqueda_combos : AppCompatActivity() {
         setContentView(R.layout.activity_busqueda_combos)
 
         btnBack = findViewById(R.id.btn_back)
-        btnPromocion= findViewById(R.id.promocion6)
+
 
         btnBack.setOnClickListener {
             goBack()
         }
 
-        btnPromocion.setOnClickListener {
-            val intent = Intent(this, descripcion_c::class.java)
-            startActivity(intent)
-        }
+
     }
 
     private fun goBack() {

@@ -33,7 +33,7 @@
 
 
     <EditText
-        android:id="@+id/usuario"
+        android:id="@+id/txtusuario"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
@@ -50,7 +50,7 @@
 
 
     <EditText
-        android:id="@+id/nombres"
+        android:id="@+id/txtnombres"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="18dp"
@@ -65,7 +65,7 @@
 
 
     <EditText
-        android:id="@+id/apellidos"
+        android:id="@+id/txtapellidos"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="18dp"
@@ -94,7 +94,7 @@
 
 
     <EditText
-        android:id="@+id/correo"
+        android:id="@+id/txtcorreo"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="18dp"
@@ -108,21 +108,21 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/direccion"
+        android:id="@+id/txtclave"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="18dp"
         android:background="@drawable/borde"
-        android:drawableLeft="@drawable/custom_direc"
         android:drawablePadding="10dp"
         android:layout_gravity="center_horizontal"
-        android:hint="Direccion"
+        android:drawableLeft="@drawable/custom_contra"
+        android:hint="Contraseña"
         android:paddingStart="12dp"
         android:textColorHint="@color/grismore"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btn_auntentication"
+        android:id="@+id/btn_registrar"
         android:layout_width="240dp"
         android:layout_height="45dp"
         android:background="@drawable/btn_design"
