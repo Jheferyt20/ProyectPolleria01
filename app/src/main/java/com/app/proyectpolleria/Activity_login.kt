@@ -24,6 +24,7 @@ class Activity_login : AppCompatActivity() {
     private lateinit var btnregister: Button
     private lateinit var btngoogle: Button
     private lateinit var txtcorreo: EditText
+
     private lateinit var txtcontra: EditText
     private lateinit var auth: FirebaseAuth
     private lateinit var iniciogoogle: GoogleSignInClient
