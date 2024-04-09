@@ -28,4 +28,5 @@
 
 
     <string name="default_web_client_id">4521636078428-c9th6goutot1rl3pjufc7geqjkbce52h.apps.googleusercontent.com</string>
+    <string name="itemid">itemId</string>
 </resources>

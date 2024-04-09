@@ -2,6 +2,7 @@ package com.app.proyectpolleria
 
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -24,11 +25,11 @@ class Activity_login : AppCompatActivity() {
     private lateinit var btnregister: Button
     private lateinit var btngoogle: Button
     private lateinit var txtcorreo: EditText
-
     private lateinit var txtcontra: EditText
     private lateinit var auth: FirebaseAuth
     private lateinit var iniciogoogle: GoogleSignInClient
     private val clNegocio = UsuarioNegocio()
+    private  val correoelectronico = String.toString()
 
     companion object {
         private const val RC_SIGN_IN = 9001
@@ -51,22 +52,31 @@ class Activity_login : AppCompatActivity() {
             val correo = txtcorreo.text.toString().trim()
             val clave = txtcontra.text.toString().trim()
             val mensaje = StringBuilder()
-            val exitoso = clNegocio.LoguearUsuario(correo, clave , mensaje)
+            val exitoso = clNegocio.LoguearUsuario(correo, clave, mensaje)
 
             if (exitoso) {
-                startActivity(Intent(this, Home::class.java))
-            } else {
+                // Consultar el ID del usuario después de iniciar sesión correctamente
+                val idUsuario = clNegocio.consultaUsuario(correo)
 
-                // Verificar si hay un mensaje de error y mostrarlo
+                if (idUsuario != 0) {
+                    // Si se encuentra el ID del usuario, guardarlo en SharedPreferences y abrir la pantalla principal
+                    val preferences: SharedPreferences = this.getSharedPreferences("datos_usuario", MODE_PRIVATE)
+                    val editor = preferences.edit()
+                    editor.putInt("USUARIO", idUsuario)
+                    editor.apply()
+                    guardarSesionActiva()
+                    startActivity(Intent(this, Home::class.java))
+                } else {
+                    Toast.makeText(this, "Error al obtener el ID del usuario", Toast.LENGTH_SHORT).show()
+                }
+            } else {
                 if (mensaje.isNotEmpty()) {
                     Toast.makeText(this, "Error al iniciar sesión: $mensaje", Toast.LENGTH_SHORT).show()
                 } else {
-                    // Si no hay mensaje de error, mostrar un mensaje genérico
                     Toast.makeText(this, "Error al iniciar sesión", Toast.LENGTH_SHORT).show()
                 }
             }
         }
-
 
         btngoogle.setOnClickListener { Iniciogoogle() }
 
@@ -93,10 +103,17 @@ class Activity_login : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun showHome() {
+    private fun showHome(correo: String) {
         val homeIntent = Intent(this, Home::class.java)
+        val idUsuario = clNegocio.consultaUsuario(correo) // Asegúrate de que esta función devuelva un entero
+        val preferences: SharedPreferences = this.getSharedPreferences("datos_usuario", MODE_PRIVATE)
+        val editor = preferences.edit()
+        editor.putInt("USUARIO", idUsuario)
+        editor.apply()
+        guardarSesionActiva()
         startActivity(homeIntent)
     }
+
 
 
     private fun Iniciogoogle() {
@@ -131,35 +148,35 @@ class Activity_login : AppCompatActivity() {
         val credential = GoogleAuthProvider.getCredential(account?.idToken, null)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
+                val user = auth.currentUser
+                val correoelectrinico = user?.email ?: ""
                 if (task.isSuccessful) {
-                    val user = auth.currentUser
                     if (task.result?.additionalUserInfo?.isNewUser == true) {
                         val photoUri = user?.photoUrl
                         val usuario = Usuario().apply {
                             nombre = user?.displayName
                             apellido = account?.familyName
-                            correo = user?.email
+                            correo = correoelectrinico
                             img = photoUri?.toString() ?: ""
                         }
-
                         registrarUsuarioConGoogle(usuario)
                     } else {
-                        // El usuario ya existe, mostrar mensaje de error
-                        showHome()
+                        showHome(correoelectrinico)
                     }
                 } else {
-                    // Mostrar mensaje de error en caso de fallo en la autenticación
                     Toast.makeText(this, "Hubo problemas", Toast.LENGTH_SHORT).show()
                 }
             }
     }
+
+
 
     private fun registrarUsuarioConGoogle(usuario: Usuario) {
         val mensaje = StringBuilder()
         val resultado = clNegocio.ResgistrarUsuarioGoogle(usuario, mensaje)
 
         if (resultado != 0) {
-            showHome()
+            showHome(usuario.correo)
         } else {
             if (mensaje.isNotEmpty()) {
                 Toast.makeText(this, "Error al registrar usuario: ${mensaje.toString()}", Toast.LENGTH_SHORT).show()
@@ -168,6 +185,15 @@ class Activity_login : AppCompatActivity() {
             }
         }
     }
+
+    private fun guardarSesionActiva() {
+        val preferences = getSharedPreferences("sesion", MODE_PRIVATE)
+        val editor = preferences.edit()
+        editor.putBoolean("sesionActiva", true)
+        editor.apply()
+    }
+
+
 
 
 

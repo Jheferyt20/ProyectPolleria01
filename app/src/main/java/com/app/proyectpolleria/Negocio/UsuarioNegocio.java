@@ -3,6 +3,9 @@ package com.app.proyectpolleria.Negocio;
 import com.app.proyectpolleria.Datos.UsuarioDatos;
 import com.app.proyectpolleria.Entidad.Usuario;
 
+import java.sql.ResultSet;
+import java.util.List;
+
 public class UsuarioNegocio {
 
 
@@ -59,6 +62,36 @@ public class UsuarioNegocio {
             mensaje.append("Verifica tu correo o tu clave");
             return  exito;
         }
+    }
+
+
+    public int consultaUsuario(String correo){
+        return datosUser.consultarpersonal(correo);
+    }
+
+    public List<Usuario> recibirDatos(int idUsuario){
+        return  datosUser.recibirDatos(idUsuario);
+    }
+
+    public int EditarUsuario(Usuario obj, StringBuilder mensaje) {
+        if (obj.getNombre() == null || obj.getNombre().trim().isEmpty()) {
+            mensaje.append("El nombre no puede ser vacío");
+        } else if (obj.getApellido() == null || obj.getApellido().trim().isEmpty()) {
+            mensaje.append("El apellido no puede ser vacío");
+        } else if (obj.getCorreo() == null || obj.getCorreo().trim().isEmpty()) {
+            mensaje.append("El correo no puede ser vacío");
+        }
+
+        if (mensaje.length() > 0) {
+            return 0; // Indica que hay errores, pero no llama a RegistrarUsuario
+        } else {
+            return datosUser.editarUsuario(obj, mensaje);
+        }
+
+    }
+
+    public  boolean GuardarImagen(int id , String url){
+        return  datosUser.GuardarImagen(id, url);
     }
 
 

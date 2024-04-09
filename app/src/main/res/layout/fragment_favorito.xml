@@ -5,34 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.favorito.FavoritoFragment"
-    android:background="@color/gris">
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerFavoritos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="0dp"
-        android:orientation="horizontal"
-        android:paddingStart="0dp"
-        android:paddingEnd="0dp" />
-
+    android:background="@color/gris"
+    android:padding="8dp">
 
     <TextView
         android:id="@+id/textF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:layout_gravity="center"
         android:textColor="@color/black2"
         android:text="@string/text_favoritos"
         android:textSize="20sp"
-        />
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFavoritos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_favorito" />
 
 </LinearLayout>

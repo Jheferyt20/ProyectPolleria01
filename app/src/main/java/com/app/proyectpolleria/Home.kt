@@ -1,6 +1,7 @@
 package com.app.proyectpolleria
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
@@ -39,4 +40,13 @@ class Home : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            onBackPressed() // o realiza la acción que desees al regresar
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 }

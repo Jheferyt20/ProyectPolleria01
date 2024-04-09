@@ -23,7 +23,7 @@
             android:elevation="1dp">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imgFoto"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:src="@drawable/miinfo"
@@ -56,7 +56,7 @@
 
 
     <TextView
-        android:id="@+id/txtCuenta"
+        android:id="@+id/txtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
