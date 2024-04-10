@@ -36,8 +36,6 @@
         tools:layout="@layout/fragment_ordena_aqui" />
 
 
-
-
     <fragment
         android:id="@+id/fragmento_plato"
         android:name="com.app.proyectpolleria.ui.plato.PlatosFragment"

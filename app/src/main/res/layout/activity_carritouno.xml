@@ -68,6 +68,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Comprar"
+        android:id="@+id/btnIraComprar"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
