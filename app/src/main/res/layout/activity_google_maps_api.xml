@@ -1,8 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Google_maps_api"/>
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnAtras"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginLeft="15dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/atras"
+                android:background="@color/gris"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="¡Estamos cerca de ti!"
+            android:paddingStart="65dp"
+            android:textColor="@color/app"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            tools:context=".Google_maps_api" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
