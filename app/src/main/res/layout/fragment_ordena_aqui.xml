@@ -11,21 +11,21 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="360dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         app:cardCornerRadius="18dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="23dp"
         app:cardUseCompatPadding="true"
         app:cardBackgroundColor="@color/app">
 
         <LinearLayout
             android:id="@+id/btnDelivery"
             android:layout_width="match_parent"
-            android:layout_height="63dp">
+            android:layout_height="80dp">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="84dp"
+                android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="30dp"
                 android:src="@drawable/custom_delivery" />
@@ -38,12 +38,13 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:paddingStart="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-smallcaps"
                     android:text="DELIVERY"
                     android:textSize="25dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="10dp"
                     android:textStyle="bold"
                     android:textColor="@color/white"/>
 
@@ -55,7 +56,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="360dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         app:cardCornerRadius="18dp"
         app:cardUseCompatPadding="true"
@@ -64,11 +65,11 @@
         <LinearLayout
             android:id="@+id/btnRecojoTienda"
             android:layout_width="match_parent"
-            android:layout_height="63dp">
+            android:layout_height="80dp">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="30dp"
                 android:src="@drawable/custom_tienda" />
@@ -81,12 +82,13 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:paddingStart="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-smallcaps"
                     android:text="RECOJO EN TIENDA"
                     android:textSize="25dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="10dp"
                     android:textStyle="bold"
                     android:textColor="@color/white"/>
 
