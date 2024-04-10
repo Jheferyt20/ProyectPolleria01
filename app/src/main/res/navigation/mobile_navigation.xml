@@ -32,8 +32,11 @@
     <fragment
         android:id="@+id/fragmento_ordena_aqui"
         android:name="com.app.proyectpolleria.ui.ordena.Ordena_aqui"
-        android:label="Ordena Aquí"
+        android:label="Ordena Aqui"
         tools:layout="@layout/fragment_ordena_aqui" />
+
+
+
 
     <fragment
         android:id="@+id/fragmento_plato"

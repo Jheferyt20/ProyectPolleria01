@@ -19,7 +19,7 @@
         app:cardBackgroundColor="@color/app">
 
         <LinearLayout
-            android:id="@+id/delivery"
+            android:id="@+id/btnDelivery"
             android:layout_width="match_parent"
             android:layout_height="63dp">
 
@@ -62,7 +62,7 @@
         app:cardBackgroundColor="@color/app">
 
         <LinearLayout
-            android:id="@+id/recojoentienda"
+            android:id="@+id/btnRecojoTienda"
             android:layout_width="match_parent"
             android:layout_height="63dp">
 

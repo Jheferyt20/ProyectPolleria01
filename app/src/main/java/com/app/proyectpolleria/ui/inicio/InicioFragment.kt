@@ -59,6 +59,11 @@ class InicioFragment : Fragment() {
             findNavController().navigate(R.id.fragmento_ordena_aqui)
         }
 
+        ordena.setOnClickListener {
+            // Navegar al fragmento "fragmento_ordena_aqui" utilizando el NavController
+            findNavController().navigate(R.id.fragmento_ordena_aqui)
+        }
+
 
         return root
     }

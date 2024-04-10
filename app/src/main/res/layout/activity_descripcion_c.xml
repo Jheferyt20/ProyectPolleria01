@@ -109,20 +109,7 @@
         android:textStyle="bold" />
 
 
-    <Button
-        android:id="@+id/fin_compra"
-        android:layout_width="282dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:background="@drawable/btn_design"
-        android:drawableLeft="@drawable/btn_ir_pagar"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Ir a pagar"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+
 
 
 </LinearLayout>
