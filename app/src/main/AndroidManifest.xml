@@ -36,9 +36,7 @@
         <activity
             android:name=".Home"
             android:exported="false"></activity>
-        <activity
-            android:name=".ComprasActivity"
-            android:exported="false"></activity>
+
         <activity
             android:name=".DatosActivity"
             android:exported="false"

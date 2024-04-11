@@ -32,7 +32,6 @@
 
 
             <TextView
-                android:id="@+id/PoliticaTitulo"
                 android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-50dp"
