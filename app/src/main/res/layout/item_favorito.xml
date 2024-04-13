@@ -27,6 +27,7 @@
                 android:src="@drawable/img_3" />
 
             <TextView
+                android:id="@+id/txtnombreplato_fav"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

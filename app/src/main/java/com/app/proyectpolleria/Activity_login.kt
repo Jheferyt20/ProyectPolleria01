@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -148,26 +149,28 @@ class Activity_login : AppCompatActivity() {
         val credential = GoogleAuthProvider.getCredential(account?.idToken, null)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
-                val user = auth.currentUser
-                val correoelectrinico = user?.email ?: ""
                 if (task.isSuccessful) {
+                    val user = auth.currentUser
+                    val correoElectronico = user?.email ?: ""
                     if (task.result?.additionalUserInfo?.isNewUser == true) {
                         val photoUri = user?.photoUrl
                         val usuario = Usuario().apply {
                             nombre = user?.displayName
                             apellido = account?.familyName
-                            correo = correoelectrinico
+                            correo = correoElectronico
                             img = photoUri?.toString() ?: ""
                         }
                         registrarUsuarioConGoogle(usuario)
                     } else {
-                        showHome(correoelectrinico)
+                        showHome(correoElectronico)
                     }
                 } else {
-                    Toast.makeText(this, "Hubo problemas", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Hubo problemas al autenticar con Google", Toast.LENGTH_SHORT).show()
+                    Log.e("Autenticación", "Error al autenticar con Google", task.exception)
                 }
             }
     }
+
 
 
 

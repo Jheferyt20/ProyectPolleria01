@@ -58,7 +58,6 @@ class Activity_register : AppCompatActivity() {
 
             val resultado = clNegocio.ResgistrarUsuario(usuario, mensaje)
 
-            // Verificar el resultado y mostrar un mensaje al usuario
             if (resultado != 0) {
                 Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
             } else {

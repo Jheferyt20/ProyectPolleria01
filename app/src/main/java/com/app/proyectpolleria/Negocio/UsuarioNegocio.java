@@ -16,7 +16,6 @@ public class UsuarioNegocio {
             mensaje = new StringBuilder();
         }
 
-
         if (obj.getUsuario() == null || obj.getUsuario().trim().isEmpty()) {
             mensaje.append("El usuario no puede ser vacío");
         }else if (obj.getNombre() == null || obj.getNombre().trim().isEmpty()) {

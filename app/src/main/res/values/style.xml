@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <style name="ButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="android:background">@drawable/custom_button_background</item>
+        <item name="android:background">@color/white</item>
         <!-- Puedes agregar más atributos según tus necesidades -->
     </style>
 

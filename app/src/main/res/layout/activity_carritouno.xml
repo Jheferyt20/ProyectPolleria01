@@ -8,33 +8,55 @@
     android:orientation="vertical"
     android:background="@color/gris">
 
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="50dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/atras"
-        android:paddingStart="10dp" />
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/atras" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="80dp"
+            android:text="Mi Carrito"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/app"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+    </LinearLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCarrito"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="620dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="96dp" />
-
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp" />
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtTexto1"
         android:layout_width="239dp"
         android:layout_height="25dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="90dp"
         android:text="Tu carrito está vacio."
         android:textColor="@color/grismore"
         android:textSize="21sp"
@@ -42,7 +64,7 @@
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtTexto2"
         android:layout_width="239dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
@@ -53,7 +75,7 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imglogo"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_gravity="center"
@@ -62,24 +84,13 @@
 
 
     <Button
-        android:layout_width="140dp"
-        android:layout_height="42dp"
-        android:background="@drawable/btn_design"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Comprar"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <Button
+        android:id="@+id/btnPagar"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:background="@drawable/btn_design"
         android:drawableLeft="@drawable/btn_ir_pagar"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="10dp"
         android:text="Ir a pagar"
         android:textAllCaps="false"
         android:textColor="@color/white"

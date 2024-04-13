@@ -107,6 +107,12 @@ class MicuentaFragment : Fragment() {
         return root
     }
 
+    override fun onResume() {
+        super.onResume()
+        verDatos(idUsuario)
+    }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()

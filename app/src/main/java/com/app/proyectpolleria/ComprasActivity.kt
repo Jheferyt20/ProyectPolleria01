@@ -6,6 +6,6 @@ import android.os.Bundle
 class ComprasActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_compras)
+        setContentView(R.layout.activity_fincompra)
     }
 }

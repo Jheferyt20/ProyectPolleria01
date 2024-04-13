@@ -94,7 +94,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/agregar_producto"
+        android:id="@+id/agregar_carrito"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
