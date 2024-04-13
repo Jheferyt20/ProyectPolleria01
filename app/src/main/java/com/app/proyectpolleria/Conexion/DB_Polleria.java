@@ -6,6 +6,7 @@ import java.sql.DriverManager;
 
 public class DB_Polleria {
 
+
     public static Connection conectar() {
         Connection cnn =null;
         try {
