@@ -19,7 +19,6 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.app.proyectpolleria.Activity_login
-import com.app.proyectpolleria.ComprasActivity
 import com.app.proyectpolleria.DatosActivity
 import com.app.proyectpolleria.Negocio.UsuarioNegocio
 import com.app.proyectpolleria.R
@@ -38,7 +37,6 @@ class MicuentaFragment : Fragment() {
     private val db = FirebaseFirestore.getInstance()
 
     private lateinit var btnCerrarSesion: LinearLayout
-    private lateinit var btnCompras: LinearLayout
     private lateinit var btnPolitica: LinearLayout
     private lateinit var btnEditar: LinearLayout
     private lateinit var  txtnombre: TextView
@@ -66,7 +64,6 @@ class MicuentaFragment : Fragment() {
         galery = binding.imgboton;
         imagenfoto = root.findViewById(R.id.imgFoto)
         btnEditar = root.findViewById(R.id.linedit)
-        btnCompras = root.findViewById(R.id.linecompras)
         btnPolitica = root.findViewById(R.id.linepolitica)
         btnCerrarSesion = root.findViewById(R.id.linesalir)
         imagenfoto.setScaleType(ImageView.ScaleType.CENTER_CROP)
@@ -87,10 +84,6 @@ class MicuentaFragment : Fragment() {
             startActivity(intent)
         }
 
-        btnCompras.setOnClickListener{
-            val  intent = Intent(context , ComprasActivity::class.java)
-            startActivity(intent)
-        }
 
         btnPolitica.setOnClickListener{
             val intent = Intent(context , politica_empresa::class.java)
@@ -193,13 +186,6 @@ class MicuentaFragment : Fragment() {
                 .into(imagenfoto)
         }
     }
-
-
-
-
-
-
-
 
 }
 
