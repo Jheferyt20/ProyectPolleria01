@@ -93,25 +93,7 @@
         app:layout_constraintVertical_bias="0.79" />
 
 
-    <Button
-        android:id="@+id/queseteantoja"
-        android:layout_width="330dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="-15dp"
-        android:background="@drawable/btn_trans"
-        android:drawableRight="@drawable/custom_busq"
-        android:paddingEnd="23dp"
-        android:text="¿QUE SE TE ANTOJA HOY?"
-        android:textColor="@color/grismore"
-        android:textSize="17dp"
-        android:gravity="center_vertical|end"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.1" />
+
 
 
 
@@ -134,7 +116,6 @@
         android:id="@+id/viewFlipper"
         android:layout_width="300dp"
         android:layout_height="190dp"
-        android:layout_marginTop="10dp"
         android:autoStart="true"
         android:flipInterval="3000"
         android:inAnimation="@android:anim/slide_in_left"
@@ -143,8 +124,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/queseteantoja"
-        app:layout_constraintVertical_bias="0.245"
+        app:layout_constraintTop_toBottomOf="@+id/view"
         tools:ignore="MissingConstraints">
 
 

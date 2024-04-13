@@ -13,7 +13,7 @@ public class DB_Polleria {
             StrictMode.ThreadPolicy politica= new  StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(politica);
             Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
-            cnn= DriverManager.getConnection("jdbc:jtds:sqlserver://Polleria.mssql.somee.com;user=PauloYas_SQLLogin_1;password=wuqyiy3npx;databaseName=Polleria");
+            cnn= DriverManager.getConnection("jdbc:jtds:sqlserver://pollerialenadorbd.mssql.somee.com;user=GabrielAnzardoH_SQLLogin_1;password=32llmacye8;databaseName=pollerialenadorbd");
 
         }catch (Exception e){
             e.printStackTrace();

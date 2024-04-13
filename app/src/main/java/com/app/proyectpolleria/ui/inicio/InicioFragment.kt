@@ -45,7 +45,7 @@ class InicioFragment : Fragment() {
         val root: View = binding.root
 
         ordena=binding.ordenaaqui
-        antojo=binding.queseteantoja
+        //antojo=binding.queseteantoja
         carrito=binding.imgCarrito
         // promos=binding.promosexclusivas
 
