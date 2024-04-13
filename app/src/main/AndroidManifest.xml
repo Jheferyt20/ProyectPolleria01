@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectPolleria"
         tools:targetApi="31">
-
+        <activity
+            android:name=".FinComprasActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -27,32 +29,29 @@
              project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
              "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
         -->
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCKqaY_PmDt66YWihefC2AOICygQ0OM3J0" />
 
-
         <activity
             android:name=".Home"
-            android:exported="false"></activity>
-
+            android:exported="false" />
         <activity
             android:name=".DatosActivity"
             android:exported="false"
-            android:launchMode="singleTop"></activity>
+            android:launchMode="singleTop" />
         <activity
             android:name=".politica_empresa"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".descripcion_c"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Activity_carrito"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Google_maps_api"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Busquedaa"
             android:exported="false" />
@@ -61,10 +60,10 @@
             android:exported="false" />
         <activity
             android:name=".Busqueda_combos"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".delivery_distritos"
-            android:exported="false"></activity> <!-- Actividad principal ahora es .Home -->
+            android:exported="false" /> <!-- Actividad principal ahora es .Home -->
         <activity
             android:name=".Activity_login"
             android:exported="true">

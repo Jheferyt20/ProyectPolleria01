@@ -60,7 +60,7 @@ class Activity_carrito: AppCompatActivity() {
 
 
         btnFindeCompra.setOnClickListener {
-            val intent = Intent(this, ComprasActivity::class.java)
+            val intent = Intent(this, FinComprasActivity::class.java)
             startActivity(intent)
         }
 
