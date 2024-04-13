@@ -116,6 +116,7 @@
         android:id="@+id/viewFlipper"
         android:layout_width="300dp"
         android:layout_height="190dp"
+        android:layout_marginTop="-100dp"
         android:autoStart="true"
         android:flipInterval="3000"
         android:inAnimation="@android:anim/slide_in_left"
